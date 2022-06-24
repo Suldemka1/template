@@ -1,0 +1,105 @@
+@media (max-width: 500px) {
+  .navbar_brand_logo img {
+    display: none;
+  }
+  
+  .navbar_brand_logo_name {
+    font-size: 20px;
+  }
+
+  .header {
+    display: none;
+    background: white;
+  }
+}
+
+.header {
+  display: block;
+  background: khaki;
+}
+
+.navbar_top {
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(31, 54, 133);
+  color: aliceblue;
+}
+
+.navbar_top img {
+  padding: 10px;
+}
+
+.navbar_top input {
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 2px;
+}
+
+.navbar_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 24px !important;
+}
+
+.navbar_links a {
+  padding: 20px;
+}
+
+.navbar_brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar_brand_logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_brand_logo img {
+  padding: 10px;
+}
+
+.navbar_brand_logo_name {
+  line-height: 0;
+  padding: 10px;
+}
+
+.navbar_brand_logo_name h2 {
+  line-height: 0;
+  font-size: 30px;
+}
+
+.navbar_brand_logo_name h4 {
+  font-weight: 400;
+}
+
+.nav_menu menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+
+  line-height: 55px;
+
+  background: rgb(247, 247, 247);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 1px 2px rgb(0 0 0 / 5%);
+}
