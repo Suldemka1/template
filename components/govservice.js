@@ -8,22 +8,22 @@ export default function Resourse() {
         <h2>Государственные услуги</h2>
         <div className={govservice.cards}>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
           <div className={govservice.card}>
-            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div></a>
+            <a href="#"><div>Название государсвенной услуги со ссылкой на неё</div><img/></a>
           </div>
         </div>
       </div>
