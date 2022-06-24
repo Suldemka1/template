@@ -1,0 +1,11 @@
+@media (max-width: 1240px){
+  .footer {
+    width: 100vw;
+  }
+}
+
+.footer {
+  width: 1240px;
+  font-size: calc(1vw + 10px);
+  margin: auto;
+}

@@ -1,4 +1,16 @@
+@media (max-width: 640px) {
+  .container {
+    width: 100vw !important;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    width: 100vw !important;
+  }
+}
+
 .container {
-  width: 1240px;
+  width: 100vw;
   margin: auto;
 }

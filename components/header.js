@@ -6,7 +6,7 @@ export default function Header() {
       <div className={header.navbar_top}>
         <img src="/herb.svg.png" width={80} height={80} />
         <div className={header.navbar_links}>
-          <a href="/about">Министерство</a>
+          <a href="/">Министерство</a>
           <a href="/documents">Банк документов</a>
           <a href="/service">Сервисы</a>
         </div>
@@ -18,8 +18,8 @@ export default function Header() {
         <div className={header.navbar_brand_logo}>
           <img src="/herb.svg.png" width={100} height={100} />
           <div className={header.navbar_brand_logo_name}>
-            <h2 className={header.navbar_minabbr}>Минсокрназвание</h2>
-            <h4 className={header.navbar_minfullname}>Министерство полное название</h4>
+            <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
+            <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
           </div>
         </div>
         <div className={header.must_have}>

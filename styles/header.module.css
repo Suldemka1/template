@@ -1,21 +1,11 @@
-@media (max-width: 500px) {
-  .navbar_brand_logo img {
-    display: none;
-  }
-  
-  .navbar_brand_logo_name {
-    font-size: 20px;
-  }
-
+@media (max-width: 640px) {
   .header {
-    display: none;
-    background: white;
+    display: none !important;
   }
 }
 
 .header {
   display: block;
-  background: khaki;
 }
 
 .navbar_top {
@@ -73,16 +63,16 @@
 }
 
 .navbar_brand_logo_name {
-  line-height: 0;
   padding: 10px;
 }
 
 .navbar_brand_logo_name h2 {
-  line-height: 0;
+  display: block;
   font-size: 30px;
 }
 
 .navbar_brand_logo_name h4 {
+  display: block;
   font-weight: 400;
 }
 
