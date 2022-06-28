@@ -21,7 +21,7 @@ export default function Home() {
       <MobileHeader />
       <div className={styles.container}>
 
-        <News />
+        {/* <News /> */}
         
         <Service />
 

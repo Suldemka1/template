@@ -14,15 +14,15 @@ export default function MobileHeader() {
           <span></span>
         </label>
         <ul className={menu.menu__box}>
-          <li><Link className={menu.menu__item} href="/about"><a>О министерстве</a></Link></li>
-          <li><Link className={menu.menu__item} href="/activity"><a>Деятельность</a></Link></li>
-          <li><Link className={menu.menu__item} href="/projects"><a>Проекты</a></Link></li>
-          <li><Link className={menu.menu__item} href="/press-service"><a>Пресс-служба</a></Link></li>
-          <li><Link className={menu.menu__item} href="/contacts"><a>Контакты</a></Link></li>
+          <li><Link href="/about"><a className={menu.menu__item}>О министерстве</a></Link></li>
+          <li><Link href="/activity"><a className={menu.menu__item}>Деятельность</a></Link></li>
+          <li><Link href="/projects"><a className={menu.menu__item}>Проекты</a></Link></li>
+          <li><Link href="/press-service"><a className={menu.menu__item}>Пресс-служба</a></Link></li>
+          <li><Link href="/contacts"><a className={menu.menu__item}>Контакты</a></Link></li>
 
-          <li><Link className={menu.menu__item} href="/"><a>Министерство</a></Link></li>
-          <li><Link className={menu.menu__item} href="/"><a>Банк документов</a></Link></li>
-          <li><Link className={menu.menu__item} href="/"><a>Сервисы</a></Link></li>
+          <li><Link href="/"><a className={menu.menu__item}>Министерство</a></Link></li>
+          <li><Link href="/"><a className={menu.menu__item}>Банк документов</a></Link></li>
+          <li><Link href="/"><a className={menu.menu__item}>Сервисы</a></Link></li>
         </ul>
       </div>
 
