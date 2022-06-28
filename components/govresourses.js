@@ -1,4 +1,5 @@
 import gvres from '../styles/govservice.module.css'
+import Link from 'next/link'
 
 export default function Resourse(){
   return(
@@ -7,22 +8,22 @@ export default function Resourse(){
         <h2>Государственные ресурсы</h2>
         <div className={gvres.cards}>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
           <div className={gvres.card}>
-            <a href="#"><div>Название информационного ресурса</div></a>
+            <Link href="/"><div>Название информационного ресурса</div></Link>
           </div>
         </div>
       </div>

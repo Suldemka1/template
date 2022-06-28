@@ -1,5 +1,7 @@
 import header from '../styles/header.module.css'
 import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [selected, setSelected] = useState(false)
@@ -8,11 +10,11 @@ export default function Header() {
     <header className={header.header}>
       <div className={header.navbar_top}>
         <div className={header.navbar_top_content}>
-          <img src="/herb.svg.png" width={80} height={80} />
+          <Image src="/herb.svg.png" width={80} height={80} />
           <div className={header.navbar_links}>
-            <a href="/">Министерство</a>
-            <a href="/documents">Банк документов</a>
-            <a href="/service">Сервисы</a>
+            <Link href="/">Министерство</Link>
+            <Link href="/documents">Банк документов</Link>
+            <Link href="/service">Сервисы</Link>
           </div>
 
           <input type="text" placeholder='поиск' />
@@ -22,7 +24,7 @@ export default function Header() {
       <div className={header.navbar_brand}>
         <div className={header.navbar_brand_content}>
           <div className={header.navbar_brand_logo}>
-            <img src="/herb.svg.png" width={100} height={100} />
+            <Image src="/herb.svg.png" width={100} height={100} />
             <div className={header.navbar_brand_logo_name}>
               <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
               <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
@@ -42,11 +44,11 @@ export default function Header() {
 
       <div className={header.nav_menu}>
         <menu>
-          <li><a href='/about' onClick={e => setSelected(true)}>О министерстве</a></li>
-          <li><a href='/about'>Деятельность</a></li>
-          <li><a href='/about'>Проекты</a></li>
-          <li><a href='/about'>Пресс-служба</a></li>
-          <li><a href='/about'>Контакты</a></li>
+          <li><Link href='/about'><a onClick={e => setSelected(true)}>О министерстве</a></Link></li>
+          <li><Link href='/about'><a>Деятельность</a></Link></li>
+          <li><Link href='/about'><a>Проекты</a></Link></li>
+          <li><Link href='/about'><a>Пресс-служба</a></Link></li>
+          <li><Link href='/about'><a>Контакты</a></Link></li>
         </menu>
       </div>
     </header>
