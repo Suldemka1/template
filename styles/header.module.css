@@ -4,25 +4,37 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .nav_menu menu , .navbar_top_content, .navbar_brand_content {
+    width: 100vw !important;
+    justify-content: center !important;
+  }
+}
+
 .header {
   display: block;
 }
 
 .navbar_top {
-  display: flex;
-  justify-content: space-around;
-  line-height: 50px;
-  align-items: center;
-  flex-wrap: wrap;
   background: rgb(31, 54, 133);
   color: aliceblue;
 }
 
-.navbar_top img {
+.navbar_top_content {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar_top_content img {
   padding: 10px;
 }
 
-.navbar_top input {
+.navbar_top_content input {
   border-radius: 5px;
   outline: none;
   height: 30px;
@@ -44,13 +56,19 @@
 }
 
 .navbar_brand {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  
 
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.navbar_brand_content {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar_brand_logo {
@@ -76,20 +94,45 @@
   font-weight: 400;
 }
 
+.nav_menu {
+  background: rgb(247, 247, 247);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 1px 2px rgb(0 0 0 / 5%);
+}
+
 .nav_menu menu {
-  margin: 0;
+  width: 1240px;
+  margin: auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   list-style: none;
   text-decoration: none;
 
   line-height: 55px;
+}
 
-  background: rgb(247, 247, 247);
-  box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 1px 2px rgb(0 0 0 / 5%);
+
+.nav_menu menu li {
+  border-bottom: 3px solid rgb(247, 247, 247);
+}
+
+.nav_menu menu li:hover a {
+  color: rgb(31, 54, 133);
+}
+
+.nav_menu menu li:hover {
+  border-bottom: 3px solid #154EC9;
+}
+
+.nav_menu menu li a {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.nav_menu menu li a:hover {
+  color: #154EC9;
 }
