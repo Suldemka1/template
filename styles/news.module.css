@@ -25,6 +25,7 @@
 
 .banners {
   display: flex;
+  height: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
@@ -35,4 +36,13 @@
 .banners_item {
   max-width: 100%;
   height: auto;
+}
+
+.banners_item .top_slider {
+  margin-bottom: 20px !important;
+  padding-bottom: 10px;
+}
+
+.banners_item .down_slider {
+  margin-top: 20px !important;
 }

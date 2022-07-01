@@ -17,7 +17,7 @@ a {
 }
 
 p {
-  font-size: calc(1vw + 10px);
+  font-size: 1rem;
 }
 
 footer {

@@ -1,14 +1,5 @@
-.about {
-  width: 1240px;
-  margin: auto;
-}
-
-.about h1 {
-  line-height: 70px;
-}
-
 .textinfo p {
-  font-size: 20px;
+  font-size: calc(1vw + 10px);
   line-height: 30px;
   text-align: justify;
   word-wrap: break-word;
@@ -16,8 +7,10 @@
 
 .documents {
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -32,17 +25,4 @@
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.links .card {
-  background-color: #F4F7FB;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.links .card p {
-  font-size: 25px;
-  margin: auto;
-  line-height: 40px;
 }
