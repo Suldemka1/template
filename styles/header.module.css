@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1110px) {
   .nav_menu menu , .navbar_top_content, .navbar_brand_content {
     width: 100vw !important;
     justify-content: center !important;
@@ -22,7 +22,7 @@
 }
 
 .navbar_top_content {
-  width: 1240px;
+  width: 1110px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@
 }
 
 .navbar_brand_content {
-  width: 1240px;
+  width: 1110px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +101,7 @@
 }
 
 .nav_menu menu {
-  width: 1240px;
+  width: 1110px;
   margin: auto;
   padding: 0;
   display: flex;

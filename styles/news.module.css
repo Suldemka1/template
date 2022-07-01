@@ -7,20 +7,18 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .last_post {
-  display: block;
+}
+
+.last_post .imgcontainer {
+  width: 730px !important;
+  height: 486px !important;
 }
 
 .last_post p {
-  width: 400px;
-}
-
-.last_post img {
-  max-width: 100%;
-  height: auto;
+  width: 50%;
 }
 
 .banners {
@@ -29,8 +27,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .banners_item {

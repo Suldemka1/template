@@ -1,4 +1,4 @@
-@media (max-width: 1240px) {
+@media (max-width: 1110px) {
   .resourse {
     width: 100vw !important;
   }
@@ -9,7 +9,7 @@
 }
 
 .resourse {
-  width: 1240px;
+  width: 1110px;
   margin: auto;
   font-size: 1rem;
 }

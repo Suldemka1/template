@@ -1,11 +1,11 @@
-@media (max-width: 1240px){
+@media (max-width: 1110px){
   .footer {
     width: 100vw !important;
   }
 }
 
 .footer {
-  width: 1240px;
+  width: 1110px;
   font-size: calc(1rem + 5px);
   margin: auto;
   line-height: 2.5rem;

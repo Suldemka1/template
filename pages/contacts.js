@@ -154,12 +154,12 @@ export default function Contacts() {
           <div className={contacts.item}>
             <p>Социальные медиа</p>
             <ul>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/vk_logo.svg'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/telegram.svg'} width="20px" height='20px'/></span>Telegram</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/Rutube.svg'} width="20px" height='20px'/></span>Rutube</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
+              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
             </ul>
           </div>
           <hr />
