@@ -1,5 +1,15 @@
-.structure {
+@media (max-width: 1081px) {
+  .structure .ministr {
+    display: flex !important;
+    justify-content: center;
+  }
 
+  .structure .headOf {
+    justify-content: center !important;
+  }
+}
+
+.structure {
   justify-content: space-between;
 }
 
@@ -8,8 +18,7 @@
 }
 
 .structure .headOf {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }

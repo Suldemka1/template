@@ -13,56 +13,60 @@ export default function Structure() {
       <div className={structure.structure}>
         <div className={structure.ministr}>
           <Person
-            image='/herb.svg.png'
+            image='/person.jpg'
             width={'180px'}
             height={'233px'}
-            surname='Фамилия'
-            name='Имя'
-            patronymic='Отчество'
-            position='Должность'
-
-            department_1='Один из департаментов'
+            surname='Бартан'
+            name='Аяс'
+            patronymic='Олегович'
+            position='Министр цифрового развития'
 
             photos='/link'
           />
         </div>
         <div className={structure.headOf}>
           <Person
-            image='/herb.svg.png'
-            width={200}
-            height={150}
-            surname='Фамилия'
-            name='Имя'
-            patronymic='Отчество'
-            position='Должность'
-
-            department_1='Один из департаментов'
+            image='/person.jpg'
+            width={'180px'}
+            height={'233px'}
+            surname='Бартан'
+            name='Аяс'
+            patronymic='Олегович'
+            position='Министр цифрового развития'
 
             photos='/link'
           />
           <Person
-            image='/herb.svg.png'
-            width={200}
-            height={150}
-            surname='Фамилия'
-            name='Имя'
-            patronymic='Отчество'
-            position='Должность'
-
-            department_1='Один из департаментов'
+            image='/person.jpg'
+            width={'180px'}
+            height={'233px'}
+            surname='Бартан'
+            name='Аяс'
+            patronymic='Олегович'
+            position='Министр цифрового развития'
 
             photos='/link'
           />
           <Person
-            image='/herb.svg.png'
-            width={200}
-            height={150}
-            surname='Фамилия'
-            name='Имя'
-            patronymic='Отчество'
-            position='Должность'
+            image='/person.jpg'
+            width={'180px'}
+            height={'233px'}
+            surname='Бартан'
+            name='Аяс'
+            patronymic='Олегович'
+            position='Министр цифрового развития'
 
-            department_1='Один из департаментов'
+            photos='/link'
+          />
+
+          <Person
+            image='/person.jpg'
+            width={'180px'}
+            height={'233px'}
+            surname='Бартан'
+            name='Аяс'
+            patronymic='Олегович'
+            position='Министр цифрового развития'
 
             photos='/link'
           />
