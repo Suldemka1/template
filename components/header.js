@@ -45,10 +45,10 @@ export default function Header() {
       <div className={header.nav_menu}>
         <menu>
           <li><Link href='/about'><a onClick={e => setSelected(true)}>О министерстве</a></Link></li>
-          <li><Link href='/about'><a>Деятельность</a></Link></li>
-          <li><Link href='/about'><a>Проекты</a></Link></li>
-          <li><Link href='/about'><a>Пресс-служба</a></Link></li>
-          <li><Link href='/about'><a>Контакты</a></Link></li>
+          <li><Link href='/activity'><a>Деятельность</a></Link></li>
+          <li><Link href='/projects'><a>Проекты</a></Link></li>
+          <li><Link href='/press-service'><a>Пресс-служба</a></Link></li>
+          <li><Link href='/contacts'><a>Контакты</a></Link></li>
         </menu>
       </div>
     </header>

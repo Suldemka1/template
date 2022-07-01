@@ -28,7 +28,7 @@
 }
 
 .card {
-  width: 260px;
+  width: 280px;
   height: 100px;
   padding: 20px;
   border: 1px solid white;
@@ -54,11 +54,12 @@
   align-items: center;
 }
 
-.card a div {
-  padding: 20px;
+.card a {
+  padding: 5px;
 }
 
 .card a img {
+  width: 60px !important;
   content: url('../public/gosuslugihex.svg');
 }
 

@@ -8,22 +8,22 @@ export default function Resourse(){
         <h2>Государственные ресурсы</h2>
         <div className={gvres.cards}>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
           <div className={gvres.card}>
-            <Link href="/"><div>Название информационного ресурса</div></Link>
+            <Link href="/"><a>Название информационного ресурса</a></Link>
           </div>
         </div>
       </div>

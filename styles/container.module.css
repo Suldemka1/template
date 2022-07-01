@@ -1,0 +1,15 @@
+@media (max-width: 1240px) {
+  .container {
+    width: 96vw;
+    padding: 2vw;
+  }
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  line-height: 50px;
+}

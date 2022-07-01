@@ -10,22 +10,22 @@ export default function Resourse() {
         <h2>Государственные услуги</h2>
         <div className={govservice.cards}>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
           <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/public/click.png' width={40} height={40}/></a></Link>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
         </div>
       </div>

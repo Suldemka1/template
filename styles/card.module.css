@@ -1,0 +1,19 @@
+.card {
+  /* background-color: #F4F7FB; */
+
+  max-width: 350px;
+  
+  margin: 10px;
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  font-size: 25px;
+  margin: auto;
+  line-height: 40px;
+
+  text-align: center;
+}
