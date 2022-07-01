@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import person from '../styles/person.module.css'
 
 export default function Person(params) {
@@ -15,6 +16,8 @@ export default function Person(params) {
         <p className={person.department}>{params.department_2}</p>
         <p className={person.department}>{params.department_3}</p>
         <p className={person.department}>{params.department_4}</p>
+
+        <button><Link href={params.photos}><a>Фото</a></Link></button>
       </div>
 
     </div>

@@ -1,0 +1,15 @@
+.structure {
+
+  justify-content: space-between;
+}
+
+.structure .ministr {
+  display: block;
+}
+
+.structure .headOf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

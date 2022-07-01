@@ -53,8 +53,8 @@ export default function About() {
 
         <div className={about.links}>
           <Card
-            title={'sometitle'}
-            href={'/'}
+            title={'Структура'}
+            href={'/structure'}
             image={'/herb.svg.png'}
             width={350}
             height={233} />
