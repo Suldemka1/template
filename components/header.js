@@ -11,13 +11,20 @@ export default function Header() {
       <div className={header.navbar_top}>
         <div className={header.navbar_top_content}>
           <Image src="/herb.svg.png" width={80} height={80} />
-          <div className={header.navbar_links}>
+          {/* <div className={header.navbar_links}> */}
             <Link href="/">Министерство</Link>
             <Link href="/documents">Банк документов</Link>
-            <Link href="/service">Сервисы</Link>
-          </div>
+            <Link href={'/about'}><a>Подать обращение</a></Link>
+            <button><Image src={'/eye.png'} width={37.5} height={22.5}/>Версия для слабовидящих</button>
+          {/* </div> */}
 
-          <input type="text" placeholder='поиск' />
+          {/* <input type="text" placeholder='поиск' /> */}
+          {/* <div className={header.must_have}>
+
+            // {/* <div>Общественная приемная</div>
+            // <div>Противодействие коррупции</div>
+            // <div>Горячая линия</div> 
+          </div>*/}
         </div>
       </div>
 
@@ -34,14 +41,6 @@ export default function Header() {
               <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
             </div>
           </div>
-
-          {/* <div className={header.must_have}>
-            <div>Версия для слабовидящих</div>
-            <div>Подать обращение</div>
-            <div>Общественная приемная</div>
-            <div>Противодействие коррупции</div>
-            <div>Горячая линия</div>
-          </div> */}
         </div>
       </div>
 
@@ -49,7 +48,7 @@ export default function Header() {
         <menu>
           <li><Link href='/about'><a onClick={e => setSelected(true)}>О министерстве</a></Link></li>
           <li><Link href='/activity'><a>Деятельность</a></Link></li>
-          <li><Link href='/projects'><a>Проекты</a></Link></li>
+          <li><Link href='/ipser'><a>Нацпроект «ИПСЭР»</a></Link></li>
           <li><Link href='/press-service'><a>Пресс-служба</a></Link></li>
           <li><Link href='/contacts'><a>Контакты</a></Link></li>
         </menu>
