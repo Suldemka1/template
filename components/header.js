@@ -22,24 +22,27 @@ export default function Header() {
       </div>
 
       <div className={header.navbar_brand}>
+        <video autoPlay muted loop >
+          <source src='/flag_5.mp4' type='video/mp4' />
+        </video>
+
         <div className={header.navbar_brand_content}>
           <div className={header.navbar_brand_logo}>
-            <Image src="/herb.svg.png" width={100} height={100} />
+            {/* <Image src="/mineklogo.png" width={100} height={100} /> */}
             <div className={header.navbar_brand_logo_name}>
               <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
               <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
             </div>
           </div>
 
-          <div className={header.must_have}>
+          {/* <div className={header.must_have}>
             <div>Версия для слабовидящих</div>
             <div>Подать обращение</div>
             <div>Общественная приемная</div>
             <div>Противодействие коррупции</div>
             <div>Горячая линия</div>
-          </div>
+          </div> */}
         </div>
-
       </div>
 
       <div className={header.nav_menu}>

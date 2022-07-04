@@ -57,24 +57,40 @@
 }
 
 .navbar_brand {
-  
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.9);
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar_brand_content {
-  width: 1110px;
+.navbar_brand video {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.navbar_brand .navbar_brand_content {
+  position: absolute;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  display: flex;
 }
 
-.navbar_brand_logo {
+.navbar_brand .navbar_brand_logo {
+  height: 100%;
+
   display: flex;
+  justify-content: center;
+  margin: auto;
   align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 .navbar_brand_logo img {
@@ -87,11 +103,13 @@
 
 .navbar_brand_logo_name h2 {
   display: block;
-  font-size: 30px;
+  font-size: calc(2.5vw + 7px);
+  letter-spacing: 7px;
 }
 
 .navbar_brand_logo_name h4 {
   display: block;
+  font-size: calc(1.5vw + 7px);
   font-weight: 400;
 }
 
