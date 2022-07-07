@@ -5,6 +5,7 @@ import card from '../styles/card.module.css'
 function Card(params, { children }) {
   return (
     <div className={card.card}>
+      {children}
       <Link href={params.href}>
         <a>
           <Image src={params.image} width={params.width} height={params.height} />

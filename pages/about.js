@@ -43,36 +43,41 @@ export default function About() {
       </div>
 
       <div className={about.links}>
-        <Card
-          title={'Структура'}
-          href={'/structure'}
-          image={'/structure-icon.png'}
-          width={233}
-          height={233} />
-        <Card
-          title={'Подведомственные организации'}
-          href={'/'}
-          image={'/herb.svg.png'}
-          width={350}
-          height={233} />
-        <Card
-          title={'sometitle'}
-          href={'/'}
-          image={'/herb.svg.png'}
-          width={350}
-          height={233} />
-        <Card
-          title={'sometitle'}
-          href={'/'}
-          image={'/herb.svg.png'}
-          width={350}
-          height={233} />
-        <Card
-          title={'sometitle'}
-          href={'/'}
-          image={'/herb.svg.png'}
-          width={350}
-          height={233} />
+        <div>
+          <Card
+            title={'Руководство'}
+            href={'/structure'}
+            image={'/person.jpg'}
+            width={233}
+            height={233} />
+          <Card
+            title={'Подведомственные организации'}
+            href={'/subordinates'}
+            image={'/min.png'}
+            width={233}
+            height={233} />
+          <Card
+            title={'Структура'}
+            href={'/'}
+            image={'/min.png'}
+            width={233}
+            height={233} />
+        </div>
+        <div>
+          <Card
+            title={'Подведомственные организации'}
+            href={'/'}
+            image={'/min.png'}
+            width={233}
+            height={233} />
+          <Card
+            title={'Государственная служба'}
+            href={'/'}
+            image={'/min.png'}
+            width={233}
+            height={233} />
+        </div>
+
       </div>
     </>
   )

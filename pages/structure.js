@@ -1,25 +1,20 @@
-import Container from "../components/container";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import MobileHeader from "../components/mobile-header";
 import Person from "../components/person";
-import container from '../styles/container.module.css'
 import structure from '../styles/structure.module.css'
 
 export default function Structure() {
   return (
     <>
-      <h1>Структура министерства</h1>
+      <h1>Руководство министерства</h1>
       <div className={structure.structure}>
         <div className={structure.ministr}>
           <Person
             image='/person.jpg'
-            width={'180px'}
-            height={'233px'}
-            surname='Бартан'
-            name='Аяс'
-            patronymic='Олегович'
-            position='Министр цифрового развития'
+            width={216}
+            height={286}
+            surname='Сат'
+            name='Айдыс'
+            patronymic='Александрович'
+            position='Министр экономического развития и промышленности'
 
             photos='/link'
           />
@@ -27,46 +22,34 @@ export default function Structure() {
         <div className={structure.headOf}>
           <Person
             image='/person.jpg'
-            width={'180px'}
-            height={'233px'}
-            surname='Бартан'
-            name='Аяс'
-            patronymic='Олегович'
-            position='Министр цифрового развития'
+            width={216}
+            height={286}
+            surname='Ховалыг'
+            name='Снежана'
+            patronymic='Кушкаш-ооловна'
+            position='Первый заместитель министра'
 
             photos='/link'
           />
           <Person
             image='/person.jpg'
-            width={'180px'}
-            height={'233px'}
-            surname='Бартан'
-            name='Аяс'
-            patronymic='Олегович'
-            position='Министр цифрового развития'
+            width={216}
+            height={286}
+            surname='Конгар'
+            name='Анзатмаа'
+            patronymic='Аяс-кызы'
+            position='Заместитель министра - начальник департамента по развитию промышленности и инвестиционной политике'
 
             photos='/link'
           />
           <Person
             image='/person.jpg'
-            width={'180px'}
-            height={'233px'}
-            surname='Бартан'
-            name='Аяс'
-            patronymic='Олегович'
-            position='Министр цифрового развития'
-
-            photos='/link'
-          />
-
-          <Person
-            image='/person.jpg'
-            width={'180px'}
-            height={'233px'}
-            surname='Бартан'
-            name='Аяс'
-            patronymic='Олегович'
-            position='Министр цифрового развития'
+            width={216}
+            height={286}
+            surname='Таспанчик  '
+            name='Темир'
+            patronymic='Чаш-оолович'
+            position='Заместитель министра'
 
             photos='/link'
           />
