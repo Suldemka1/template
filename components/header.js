@@ -12,10 +12,11 @@ export default function Header() {
         <div className={header.navbar_top_content}>
           <Image src="/herb.svg.png" width={80} height={80} />
           {/* <div className={header.navbar_links}> */}
-            <Link href="/">Министерство</Link>
-            <Link href="/documents">Банк документов</Link>
-            <Link href={'/about'}><a>Подать обращение</a></Link>
-            <button><Image src={'/eye.png'} width={37.5} height={22.5}/>Версия для слабовидящих</button>
+
+          <Link href="/">Министерство</Link>
+          <Link href="/documents">Банк документов</Link>
+          <Link href={'/about'}><a>Подать обращение</a></Link>
+          <button><Image src={'/eye.png'} width={37.5} height={22.5} />Версия для слабовидящих</button>
           {/* </div> */}
 
           {/* <input type="text" placeholder='поиск' /> */}
@@ -34,11 +35,14 @@ export default function Header() {
         </video>
 
         <div className={header.navbar_brand_content}>
+
           <div className={header.navbar_brand_logo}>
+            <Image src="/logotip.png" width={200} height={200} />
             {/* <Image src="/mineklogo.png" width={100} height={100} /> */}
             <div className={header.navbar_brand_logo_name}>
-              <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
-              <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
+              <h2 className={header.navbar_minabbr}>Министерство экономического развития</h2>
+              <h2 >и промышленности Республики тыва</h2>
+              {/* <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4> */}
             </div>
           </div>
         </div>

@@ -105,9 +105,8 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  display: flex;
 }
 
 .navbar_brand .navbar_brand_logo {
@@ -118,6 +117,7 @@
   margin: auto;
   align-items: center;
   color: rgb(255, 255, 255);
+  /* color: rgb(31, 54, 133); */
 }
 
 .navbar_brand_logo img {
@@ -125,13 +125,14 @@
 }
 
 .navbar_brand_logo_name {
+  justify-content: start;
   padding: 10px;
 }
 
 .navbar_brand_logo_name h2 {
   display: block;
-  font-size: calc(2.5vw + 7px);
-  letter-spacing: 7px;
+  font-size: calc(2vw + 7px);
+  letter-spacing: normal;
 }
 
 .navbar_brand_logo_name h4 {
