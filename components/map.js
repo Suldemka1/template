@@ -4,6 +4,8 @@ import Image from 'next/image'
 export default function Map(){
   return(
     <div className={map.map_container}>
+      <div className={map.info_banner}>asd</div>
+
       <div className={map.map}>
         <svg viewBox="0 0 850.39 566.93">
           <a href="">
