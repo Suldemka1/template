@@ -14,6 +14,7 @@ export default function MobileHeader() {
           <span></span>
         </label>
         <ul className={menu.menu__box}>
+          
           <li><Link href="/about"><a className={menu.menu__item}>О министерстве</a></Link></li>
           <li><Link href="/activity"><a className={menu.menu__item}>Деятельность</a></Link></li>
           <li><Link href="/projects"><a className={menu.menu__item}>Проекты</a></Link></li>
