@@ -1,11 +1,9 @@
-import { Button } from 'react-bootstrap'
-import Card from 'react-bootstrap/Card'
-import CardHeader from 'react-bootstrap/esm/CardHeader'
+
 
 export default function Job() {
   return (
     <>
-      <Card>
+      {/* <Card>
         <CardHeader>
           <Card.Title>Название вакансии</Card.Title>
         </CardHeader>
@@ -18,7 +16,7 @@ export default function Job() {
         <Card.Footer>
           <Button>Отправить резюме</Button>
         </Card.Footer>
-      </Card>
+      </Card> */}
     </>
   )
 }
