@@ -35,7 +35,7 @@ export default function Header() {
 
         <div className={header.navbar_brand_content}>
           <div className={header.navbar_brand_logo}>
-            {/* <Image src="/mineklogo.png" width={100} height={100} /> */}
+            <Image src="/mineklogo.png" width={200} height={200} />
             <div className={header.navbar_brand_logo_name}>
               <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
               <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
