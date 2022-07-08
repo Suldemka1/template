@@ -46,7 +46,7 @@ export default function About() {
         <div>
           <Card
             title={'Руководство'}
-            href={'/structure'}
+            href={'/management'}
             image={'/person.jpg'}
             width={233}
             height={233} />
@@ -58,7 +58,7 @@ export default function About() {
             height={233} />
           <Card
             title={'Структура'}
-            href={'/'}
+            href={'/structure'}
             image={'/min.png'}
             width={233}
             height={233} />
@@ -72,7 +72,7 @@ export default function About() {
             height={233} />
           <Card
             title={'Государственная служба'}
-            href={'/'}
+            href={'/job'}
             image={'/min.png'}
             width={233}
             height={233} />

@@ -3,6 +3,8 @@ import Container from '../components/container'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import MobileHeader from '../components/mobile-header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/structure.scss'
 
 import '../styles/globals.css'
 

@@ -1,0 +1,10 @@
+.job_card {
+  padding: 20px;
+  background: '#f3f3f3';
+
+}
+
+.properties {
+  display: flex;
+  justify-content: space-between;
+}
