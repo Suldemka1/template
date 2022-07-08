@@ -86,7 +86,7 @@ export default function Management() {
 
 
         <div className="headOf">
-          
+          {show}
         </div>
       </div>
     </>
