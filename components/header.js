@@ -48,7 +48,7 @@ export default function Header() {
         <menu>
           <li><Link href='/about'><a onClick={e => setSelected(true)}>О министерстве</a></Link></li>
           <li><Link href='/activity'><a>Деятельность</a></Link></li>
-          <li><Link href='/ipser'><a>Нацпроект «ИПСЭР»</a></Link></li>
+          <li><Link href='/ipser'><a>«ИПСЭР»</a></Link></li>
           <li><Link href='/press-service'><a>Пресс-служба</a></Link></li>
           <li><Link href='/contacts'><a>Контакты</a></Link></li>
         </menu>
