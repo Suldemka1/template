@@ -34,7 +34,7 @@
 .menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   width: 26px;
@@ -78,6 +78,8 @@
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
   overflow-y: scroll;
+
+  z-index: 9999;
 }
 
 .menu__item {

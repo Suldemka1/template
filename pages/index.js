@@ -51,9 +51,9 @@ export default function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <News />
       <Service />
       <Resourse />
+      <News />
     </>
 
   )
