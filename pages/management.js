@@ -92,6 +92,7 @@ export default function Management() {
 
   const show = management.map((item) => {
     return <Person
+    key={item.id}
       surname={item.surname}
       name={item.name}
       patronymic={item.patronymic}
@@ -106,6 +107,7 @@ export default function Management() {
       <div className="headOf">
 
         <Person
+        
           surname='Cат'
           name='Айдыс'
           patronymic='Александрович'

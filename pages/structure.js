@@ -93,6 +93,7 @@ export default function Structure() {
   const show = management.map((item) => {
     return (
       <Person
+        key={item.id}
         surname={item.surname}
         name={item.name}
         patronymic={item.patronymic}

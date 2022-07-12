@@ -5,8 +5,8 @@ import { Button, Card } from 'react-bootstrap'
 
 export default function News({ posts }) {
   const datamap = posts.map((data) => (
-    <div className='news'>
-      <Card key={data.id}>
+    <div className='news' key={data.id}>
+      <Card >
         <Card.Body>
           <div className='img_container'>
             <Image src={'/news_1.jpg'} layout='fill' className='image' />
