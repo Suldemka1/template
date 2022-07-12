@@ -1,0 +1,390 @@
+@media (max-width: 528px) {
+  .person {
+    .card {
+      .card-body {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto !important;
+
+        .img_container {
+          max-width: none !important;
+          min-width: 100%;
+          height: unset !important;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 785px) {
+  .news {
+    .card {
+      .card-body {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto !important;
+
+        .img_container {
+          max-width: none !important;
+          min-width: 100%;
+          height: unset !important;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+.universal-card {
+  .card {
+    .card-body {
+      padding: 0;
+    }
+  }
+}
+
+.person {
+  width: 540px;
+
+  .card {
+    p {
+      font-size: calc(1.2rem + 8px);
+      line-height: normal;
+      margin: 0;
+    }
+    .card-header {
+      min-height: 100px;
+
+      .card-title {
+        font-size: 1.2rem !important;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      padding: 0;
+      flex-direction: row;
+      .img_container {
+        width: 40%;
+        max-width: 300px !important;
+        span {
+          position: unset !important;
+        }
+
+        .image {
+          object-fit: contain;
+          width: auto !important;
+
+          position: relative !important;
+          height: unset !important;
+        }
+      }
+
+      .list-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-left: 20px;
+        padding: 20px 20px 20px 0;
+
+        font-weight: 700;
+        line-height: normal;
+
+        .surname {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.govservice {
+  background: #f4f7fb;
+
+  @media (max-width: 1110px) {
+    .resourse {
+      width: 100vw !important;
+    }
+
+    .cards {
+      padding: 0 !important;
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .resourse {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      width: 350px;
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background: #fff;
+
+      display: flex;
+
+      align-items: center;
+      margin: auto;
+      margin-bottom: 20px;
+
+      &:hover {
+        color: #155ed3;
+      }
+
+      &:hover a img {
+        content: url("../public/gosuslugihex_hover.svg");
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 5px;
+        width: 280px !important;
+        height: 100px !important;
+
+        img {
+          width: 60px !important;
+          content: url("../public/gosuslugihex.svg");
+        }
+      }
+    }
+  }
+}
+
+.govresourses {
+  @media (max-width: 785px) {
+    .cards {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  background: #f4f7fb;
+
+  .resourse {
+    margin: auto;
+    font-size: 1rem;
+
+    h2 {
+      padding: 20px;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+
+    .card {
+      width: 280px;
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background: #fff;
+
+      display: flex;
+
+      align-items: center;
+
+      margin: 10px;
+
+      &:hover {
+        color: #155ed3;
+      }
+
+      &:hover a img {
+        content: url("../public/gosuslugihex_hover.svg");
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px;
+        width: 280px !important;
+        height: 100px !important;
+
+        div {
+          padding: 20px;
+        }
+
+        img {
+          width: 60px !important;
+          content: url("../public/gosuslugihex.svg");
+        }
+      }
+    }
+
+    .card:hover {
+      color: #155ed3;
+    }
+  }
+}
+
+@media (max-width: 775px) {
+  .subordinates {
+    width: 100%;
+  }
+
+  .subordinate {
+    width: 100% !important;
+
+    .card {
+      .card-body {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto !important;
+
+        .img_container {
+          max-width: none !important;
+          min-width: 100%;
+          height: unset !important;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+.subordinate {
+  width: 840px;
+
+  .card {
+    max-width: 100%;
+    display: flex;
+
+    .card-header {
+      width: 100%;
+    }
+
+    .card-body {
+      display: flex;
+      width: 100%;
+
+      .img_container {
+        width: 100%;
+        max-width: 300px !important;
+
+        span {
+          position: unset !important;
+        }
+
+        .image {
+          object-fit: contain;
+          width: auto !important;
+
+          position: relative !important;
+          height: unset !important;
+        }
+      }
+
+      .sub-props {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        .card-text {
+          display: flex;
+          line-height: 2em;
+          margin: 0;
+        }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+      width: auto;
+    }
+  }
+}
+
+.vacancy {
+  width: 50%;
+}
+
+.news {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .card {
+    text-align: start;
+    word-wrap: break-word;
+
+    .card-body {
+      display: flex;
+      flex-direction: row;
+
+      .img_container {
+        min-width: 350px;
+        span {
+          position: unset !important;
+        }
+
+        .image {
+          object-fit: contain;
+          width: auto !important;
+
+          position: relative !important;
+          height: unset !important;
+        }
+      }
+
+      .news_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .card-text {
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+
+        .news-tags {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .tag {
+            width: auto;
+            min-width: 100px;
+            margin-right: 20px;
+
+            text-align: center;
+
+            background: rgb(31, 54, 133);
+            color: white;
+            border-radius: 3px;
+
+            padding: 2px;
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+}

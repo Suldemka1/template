@@ -6,7 +6,7 @@
 
 @media (max-width: 1110px) {
   .nav_menu menu , .navbar_top_content, .navbar_brand_content {
-    width: 100vw !important;
+    width: auto !important;
     justify-content: space-around !important;
   }
 }
@@ -22,7 +22,6 @@
 }
 
 .navbar_top_content {
-  width: 1110px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -114,7 +113,7 @@
   height: 100%;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -146,7 +145,6 @@
 }
 
 .nav_menu menu {
-  width: 1110px;
   margin: auto;
   padding: 0;
   display: flex;

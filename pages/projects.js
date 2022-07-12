@@ -1,11 +1,5 @@
-import Header from "../components/header";
-import MobileHeader from "../components/mobile-header";
-import Footer from '../components/footer'
-import Card from "../components/card";
 import ProjectCard from "../components/project";
 import projects from '../styles/project.module.css'
-import container from '../styles/container.module.css'
-import Container from "../components/container";
 
 export default function Projects() {
   return (
