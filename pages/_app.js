@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header />
       <MobileHeader />
-      <Container>
+      <Container className='body-container'>
         <Component {...pageProps} />
       </Container>
       <Footer />

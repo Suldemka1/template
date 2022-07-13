@@ -63,7 +63,7 @@ export default function About() {
           <UniversalCard
             title={'Новости министерства'}
             href={'/news'}
-            image={'/min.png'}
+            image={'/about-news.png'}
             width={350}
             height={233} />
             

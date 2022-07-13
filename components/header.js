@@ -30,12 +30,13 @@ export default function Header() {
       </div>
 
       <div className={header.navbar_brand}>
-        <video autoPlay muted loop >
+        <Container>
+          {/* <video autoPlay muted loop >
           <source src='/flag_5.mp4' type='video/mp4' />
-        </video>
+        </video> */}
 
-        <div className={header.navbar_brand_content}>
-          <Container>
+          <div className={header.navbar_brand_content}>
+
             <div className={header.navbar_brand_logo}>
               <Image src="/tuvan_herb.png" width={150} height={150} />
               <div className={header.navbar_brand_logo_name}>
@@ -43,8 +44,9 @@ export default function Header() {
                 <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
               </div>
             </div>
-          </Container>
-        </div>
+
+          </div>
+        </Container>
       </div>
 
       <div className={header.nav_menu}>
