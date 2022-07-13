@@ -55,8 +55,10 @@
     }
     .card-header {
       min-height: 100px;
-
+      display: flex;
       .card-title {
+        display: flex;
+        align-items: center;
         font-size: 1.2rem !important;
       }
     }

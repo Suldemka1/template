@@ -35,13 +35,13 @@ export default function Header() {
         </video>
 
         <div className={header.navbar_brand_content}>
-          <div className={header.navbar_brand_logo}>
-            <Image src="/logotip.png" width={200} height={200} />
-            <div className={header.navbar_brand_logo_name}>
-              <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
-              <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
+          <Container>
+            <div className={header.navbar_brand_logo}>
+              <Image src="/logotip.png" width={150} height={150} />
+              <div className={header.navbar_brand_logo_name}>
+                <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
+                <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>
               </div>
->>>>>>> 8c2b25f843d926b05455c3753f1c03ffa86dc110
             </div>
           </Container>
         </div>
@@ -59,6 +59,7 @@ export default function Header() {
         </Container>
 
       </div>
+
     </header>
   )
 }
