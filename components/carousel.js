@@ -10,8 +10,8 @@ export default function NewsCarousel() {
           className="d-block w-100"
           src="/newspic.jpg"
           alt="First slide"
-          width={1100}
-          height={600}
+          width={1280}
+          height={853}
         />
         <Carousel.Caption>
           <h3>Заголовок новости №1</h3>
@@ -23,8 +23,8 @@ export default function NewsCarousel() {
           className="d-block w-100"
           src="/newspic.jpg"
           alt="Second slide"
-          width={1100}
-          height={600}
+          width={1280}
+          height={853}
         />
 
         <Carousel.Caption>
@@ -37,8 +37,8 @@ export default function NewsCarousel() {
           className="d-block w-100"
           src="/newspic.jpg"
           alt="Third slide"
-          width={1100}
-          height={600}
+          width={1280}
+          height={853}
         />
 
         <Carousel.Caption>

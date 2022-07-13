@@ -17,7 +17,7 @@
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 992px) {
   .news {
     .card {
       .card-body {
@@ -106,7 +106,7 @@
 .govservice {
   background: #f4f7fb;
 
-  @media (max-width: 1110px) {
+  @media (max-width: 992px) {
     .resourse {
       width: 100vw !important;
     }
@@ -174,10 +174,11 @@
 }
 
 .govresourses {
-  @media (max-width: 785px) {
+  @media (max-width: 992px) {
     .cards {
       display: flex !important;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -247,7 +248,7 @@
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 992px) {
   .subordinates {
     width: 100%;
   }
