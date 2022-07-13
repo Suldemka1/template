@@ -1,40 +1,37 @@
 import Image from "next/image"
-import Link from "next/link"
-import person from '../styles/person.module.css'
+import { Card, ListGroup, Button } from "react-bootstrap"
 
 export default function Person(params) {
 
   return (
-    <div className={person.card}>
-      <div className={person.image_container}>
-        <Image src={params.image} width={params.width} height={params.height} layout="fixed" objectFit="fill" />
-      </div>
-      
-      <div className={person.info}>
-        <div>
-          <p className={person.surname}>{params.surname}</p>
-          <p>{params.name}</p>
-          <p>{params.patronymic}</p>
-          <h4 className={person.position}>{params.position}</h4>
-        </div>
+    <div className='person'>
+      <Card key={params.key}>
+        <Card.Header>
+          <Card.Title>{params.position}</Card.Title>
+        </Card.Header>
+        <Card.Body>
+          <div className="img_container">
+            <Image src='/person.jpg' layout="fill" className="image" />
+          </div>
 
-        <div>
-          <p className={person.department}>{params.department_1}</p>
-          <p className={person.department}>{params.department_2}</p>
-          <p className={person.department}>{params.department_3}</p>
-          <p className={person.department}>{params.department_4}</p>
-        </div>
+          <ListGroup>
+            <div>
+              <Card.Text className="surname">{params.surname}</Card.Text>
+              <Card.Text className="name">{params.name}</Card.Text>
+              <Card.Text className="patronymic">{params.patronymic}</Card.Text>
+            </div>
+            <div>
+              <Card.Text className="email">{params.email}</Card.Text>
+              <Card.Text className="phone">{params.phone}</Card.Text>
+            </div>
 
-        <div className={person.buttons}>
-          <button><Link href={params.photos}><a>Фото</a></Link></button>
-          {/* <button><Link href={params.biography}><a>Биография</a></Link></button>
-          <button><Link href={params.news}><a>Новости</a></Link></button>
-          <button><Link href={params.performance}><a>Выступления</a></Link></button>
-          <button><Link href={params.interviews}><a>Интервью</a></Link></button> */}
-        </div>
-
-      </div>
-
+          </ListGroup>
+        </Card.Body>
+        <Card.Footer>
+          <Button>Фото</Button>
+        </Card.Footer>
+      </Card>
     </div>
+
   )
 }

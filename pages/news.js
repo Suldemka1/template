@@ -1,27 +1,39 @@
 import news from '../styles/news.module.css'
 import press from '../styles/press.module.css'
 import Image from 'next/image'
-import slider from '../styles/slider.module.css'
-import Link from 'next/link'
+import { Button, Card } from 'react-bootstrap'
 
-export default function News() {
+export default function News({ posts }) {
+  const datamap = posts.map((data) => (
+    <div className='news' key={data.id}>
+      <Card >
+        <Card.Body>
+          <div className='img_container'>
+            <Image src={'/news_1.jpg'} layout='fill' className='image' />
+          </div>
+          <div className='news_content'>
+            <Card.Title>{data.title}</Card.Title>
+            <Card.Text>
+              {data.body}
+            </Card.Text>
+            <div className='news-tags'>
+              <Button className='tag'>Tag 1</Button>
+              <Button className='tag'>Tag 2</Button>
+              <Button className='tag'>Tag 3</Button>
+              <Button className='tag'>Tag 4</Button>
+              <Button className='tag'>Tag 5</Button>
+              <Button className='tag'>Tag 6</Button>
+            </div>
+          </div>
+        </Card.Body>
+      </Card>
+    </div>
+  ))
+
   return (
     <div className={news.news_page}>
-      {/* <div className={news.last_news}>
-        <div className={news.last_post}>
-          
-          <div className={news.imgcontainer}>
-            <Image src='/news.jpg' width='100%' height='100%' layout="responsive" objectFit='contain'  />
-          </div>
-          <h3>Заголовок новости</h3>
-        </div>
-        <div className={news.banners}>
-          <Image className={`${news.banners_item} ${news.top_slider}`} src='/anticorruption.jpeg' width={350} height={233} layout="fixed"/>
-          <Image className={`${news.banners_item} ${news.down_slider}`} src='/anticorruption.jpeg' width={350} height={233} layout="fixed"/>
-        </div>
-      </div> */}
 
-<div className={press.news}>
+      <div className={press.news}>
         <menu>
           <li>Новости</li>
           <li>Анонсы</li>
@@ -33,103 +45,19 @@ export default function News() {
 
         <div className={press.news_content}>
           <div className={press.news_date}>01.07.2022</div>
-
-          <div className={press.news_card}>
-            <Image src='/news_1.jpg' width={350} height='233px' layout='fixed'/>
-            <div className={press.news_info}>
-              <h3>Заголовок новости</h3>
-              <p>Минсокрназвание России реализует функции по выработке и реализации государственной политики
-                 и нормативно-правовому регулированию в сфере общего образования, среднего профессионального
-                  образования и соответствующего дополнительного профессионального образования, профессионального
-                   обучения, дополнительного образования детей и взрослых, воспитания, опеки и попечительства в 
-                   отношении несовершеннолетних граждан, социальной поддержки и социальной защиты обучающихся</p>
-                   <div className={press.tags}>
-                    <p>Tag 1</p>
-                    <p>Tag 2</p>
-                    <p>Tag 3</p>
-                    <p>Tag 4</p>
-                    <p>Tag 5</p>
-                   </div>
-            </div>
-          </div>
-
-          <div className={press.news_card}>
-            <Image src='/news_1.jpg' width={350} height='233px' layout='fixed'/>
-            <div className={press.news_info}>
-              <h3>Заголовок новости</h3>
-              <p>Минсокрназвание России реализует функции по выработке и реализации государственной политики
-                 и нормативно-правовому регулированию в сфере общего образования, среднего профессионального
-                  образования и соответствующего дополнительного профессионального образования, профессионального
-                   обучения, дополнительного образования детей и взрослых, воспитания, опеки и попечительства в 
-                   отношении несовершеннолетних граждан, социальной поддержки и социальной защиты обучающихся</p>
-                   <div className={press.tags}>
-                    <p>Tag 1</p>
-                    <p>Tag 2</p>
-                    <p>Tag 3</p>
-                    <p>Tag 4</p>
-                    <p>Tag 5</p>
-                   </div>
-            </div>
-          </div>
-
-          <div className={press.news_card}>
-            <Image src='/news_1.jpg' width={350} height='233px' layout='fixed'/>
-            <div className={press.news_info}>
-              <h3>Заголовок новости</h3>
-              <p>Минсокрназвание России реализует функции по выработке и реализации государственной политики
-                 и нормативно-правовому регулированию в сфере общего образования, среднего профессионального
-                  образования и соответствующего дополнительного профессионального образования, профессионального
-                   обучения, дополнительного образования детей и взрослых, воспитания, опеки и попечительства в 
-                   отношении несовершеннолетних граждан, социальной поддержки и социальной защиты обучающихся</p>
-                   <div className={press.tags}>
-                    <p>Tag 1</p>
-                    <p>Tag 2</p>
-                    <p>Tag 3</p>
-                    <p>Tag 4</p>
-                    <p>Tag 5</p>
-                   </div>
-            </div>
-          </div>
-
-          <div className={press.news_card}>
-            <Image src='/news_1.jpg' width={350} height='233px' layout='fixed'/>
-            <div className={press.news_info}>
-              <h3>Заголовок новости</h3>
-              <p>Минсокрназвание России реализует функции по выработке и реализации государственной политики
-                 и нормативно-правовому регулированию в сфере общего образования, среднего профессионального
-                  образования и соответствующего дополнительного профессионального образования, профессионального
-                   обучения, дополнительного образования детей и взрослых, воспитания, опеки и попечительства в 
-                   отношении несовершеннолетних граждан, социальной поддержки и социальной защиты обучающихся</p>
-                   <div className={press.tags}>
-                    <p>Tag 1</p>
-                    <p>Tag 2</p>
-                    <p>Tag 3</p>
-                    <p>Tag 4</p>
-                    <p>Tag 5</p>
-                   </div>
-            </div>
-          </div>
-
-          <div className={press.news_card}>
-            <Image src='/news_1.jpg' width={350} height='233px' layout='fixed'/>
-            <div className={press.news_info}>
-              <h3>Заголовок новости</h3>
-              <p>Минсокрназвание России реализует функции по выработке и реализации государственной политики
-                 и нормативно-правовому регулированию в сфере общего образования, среднего профессионального
-                  образования и соответствующего дополнительного профессионального образования, профессионального
-                   обучения, дополнительного образования детей и взрослых, воспитания, опеки и попечительства в 
-                   отношении несовершеннолетних граждан, социальной поддержки и социальной защиты обучающихся</p>
-                   <div className={press.tags}>
-                    <p>Tag 1</p>
-                    <p>Tag 2</p>
-                    <p>Tag 3</p>
-                    <p>Tag 4</p>
-                    <p>Tag 5</p>
-                   </div>
-            </div>
-          </div>
+          {datamap}
         </div>
+
       </div>
-    </div>
+    </div >
   )
+}
+
+export async function getStaticProps(context) {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const posts = await response.json()
+
+  return {
+    props: { posts }
+  }
 }

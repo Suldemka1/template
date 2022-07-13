@@ -1,49 +1,48 @@
-import activity from '../styles/activity.module.css'
-import Card from "../components/card";
+import UniversalCard from "../components/card";
 
 export default function Activity() {
   return (
     <>
       <h1>Деятельность министерства</h1>
       <p>Деятельность министерства представлена в девяти направлениях.</p>
-      <div className={activity.activity}>
-        <Card
+      <div className='activity'>
+        <UniversalCard
           title={'Ключевые направления работы'}
           href={'/'}
           image={'/main-activity.jpg'}
           width={350}
           height={233} />
-        <Card
+        <UniversalCard
           title={'Проектная деятельность'}
           href={'/'}
           image={'/project-activity.jpg'}
           width={350}
           height={233} />
-        <Card
+        <UniversalCard
           title={'Государственные услуги'}
           href={'/'}
           image={'/govservice.jpg'}
           width={350}
           height={233} />
-        <Card
+        <UniversalCard
           title={'Закупки'}
           href={'/'}
           image={'/zakupki.jpg'}
           width={350}
           height={233} />
-        <Card
-          title={'Блоготворительность'}
+        <UniversalCard
+          title={'Благотворительность'}
           href={'/'}
           image={'/heart.jpg'}
           width={350}
           height={233} />
-        <Card
+        <UniversalCard
           title={'Противодействие терроризму'}
           href={'/'}
           image={'/antiterror.jpg'}
           width={350}
           height={233} />
-        <Card
+        <UniversalCard
           title={'Противодействие коррупции'}
           href={'/'}
           image={'/anticorruption.jpeg'}

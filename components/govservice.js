@@ -1,30 +1,29 @@
-import govservice from '../styles/govservice.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Resourse() {
   return (
-    <div className={govservice.bg_gray}>
+    <div className='govresourses'>
       
-      <div className={govservice.resourse}>
+      <div className='resourse'>
         <h2>Государственные услуги</h2>
-        <div className={govservice.cards}>
-          <div className={govservice.card}>
+        <div className='cards'>
+          <div className='card'>
+            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={80} height={80}/></a></Link>
+          </div>
+          <div className='card'>
             <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
-          <div className={govservice.card}>
+          <div className='card'>
             <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
-          <div className={govservice.card}>
+          <div className='card'>
             <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
-          <div className={govservice.card}>
+          <div className='card'>
             <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
-          <div className={govservice.card}>
-            <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
-          </div>
-          <div className={govservice.card}>
+          <div className='card'>
             <Link href="/"><a><div>Название государсвенной услуги со ссылкой на неё</div><Image src='/' width={60} height={60}/></a></Link>
           </div>
         </div>

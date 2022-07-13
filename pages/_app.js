@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import Container from '../components/container'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import MobileHeader from '../components/mobile-header'
+import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/structure.scss'
+import '../styles/layout.scss'
+import '../styles/card.scss'
 
 import '../styles/globals.scss'
 
