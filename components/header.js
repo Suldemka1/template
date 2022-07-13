@@ -37,7 +37,7 @@ export default function Header() {
         <div className={header.navbar_brand_content}>
           <Container>
             <div className={header.navbar_brand_logo}>
-              <Image src="/logotip.png" width={150} height={150} />
+              <Image src="/tuvan_herb.png" width={150} height={150} />
               <div className={header.navbar_brand_logo_name}>
                 <h2 className={header.navbar_minabbr}>Минэкономразвития РТ</h2>
                 <h4 className={header.navbar_minfullname}>Министерство экономического развития и промышленности</h4>

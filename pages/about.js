@@ -61,8 +61,8 @@ export default function About() {
             height={233} />
 
           <UniversalCard
-            title={'Подведомственные организации'}
-            href={'/'}
+            title={'Новости министерства'}
+            href={'/news'}
             image={'/min.png'}
             width={350}
             height={233} />
