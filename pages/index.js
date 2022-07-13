@@ -6,7 +6,6 @@ import NewsCarousel from '../components/carousel'
 export default function Home() {
   return (
     <>
-<<<<<<< HEAD
       <NewsCarousel/>
       <Service />
       <Resourse />
