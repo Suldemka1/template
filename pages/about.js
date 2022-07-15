@@ -39,42 +39,45 @@ export default function About() {
 
       <div className='links'>
 
-          <UniversalCard
-            title={'Руководство'}
-            href={'/management'}
-            image={'/person.jpg'}
-            width={350}
-            height={233} />
+        <UniversalCard
+          title={'Руководство'}
+          href={'/management'}
+          image={'/person.jpg'}
+          width={350}
+          height={233} />
 
-          <UniversalCard
-            title={'Подведомственные организации'}
-            href={'/subordinates'}
-            image={'/min.png'}
-            width={350}
-            height={233} />
+        <UniversalCard
+          title={'Подведомственные организации'}
+          href={'/subordinates'}
+          image={'/min.png'}
+          width={350}
+          height={233} />
 
-          <UniversalCard
-            title={'Структура'}
-            href={'/structure'}
-            image={'/min.png'}
-            width={350}
-            height={233} />
+        <UniversalCard
+          title={'Структура'}
+          href={'/structure'}
+          image={'/min.png'}
+          width={350}
+          height={233} />
 
-          <UniversalCard
-            title={'Новости министерства'}
-            href={'/news'}
-            image={'/about-news.png'}
-            width={350}
-            height={233} />
-            
-          <UniversalCard
-            title={'Государственная служба'}
-            href={'/job'}
-            image={'/min.png'}
-            width={350}
-            height={233} />
-        
+        <UniversalCard
+          title={'Новости министерства'}
+          href={'/news'}
+          image={'/about-news.png'}
+          width={350}
+          height={233} />
+
+        <UniversalCard
+          title={'Государственная служба'}
+          href={'/job'}
+          image={'/min.png'}
+          width={350}
+          height={233} />
       </div>
+
+
+
+
     </>
   )
 }

@@ -1,4 +1,4 @@
-import contacts from '../styles/contacts.module.css'
+import contacts from '../styles/contacts.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -150,16 +150,16 @@ export default function Contacts() {
           <hr />
         </div>
 
-        <div>
+        <div className={contacts.socialMedia}>
           <div className={contacts.item}>
             <p>Социальные медиа</p>
             <ul>
-              <li><Link href={'/'}><a><span><Image src={'/logo/vk_logo.svg'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/logo/telegram.svg'} width="20px" height='20px'/></span>Telegram</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/logo/Rutube.svg'} width="20px" height='20px'/></span>Rutube</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
-              <li><Link href={'/'}><a><span><Image src={'/logo/herb.svg.png'} width="20px" height='20px'/></span>вконтакте</a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
             </ul>
           </div>
           <hr />

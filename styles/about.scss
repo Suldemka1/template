@@ -1,0 +1,43 @@
+.links {
+  .image-container {
+    width: 100%;
+    span {
+      position: unset !important;
+
+      #image {
+        object-fit: contain;
+        width: 1300px;
+
+        content: url("../public/anticorruption.jpeg");
+        position: relative !important;
+        height: unset !important;
+
+        &:hover {
+          content: url("../public/vacancy.jpeg");
+        }
+      }
+    }
+  }
+
+  menu {
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    #management {
+      background: red;
+
+      &:hover {
+        background: blue;
+      }
+
+      &:hover .links .image-container span #image {
+        content: url("../public/vacancy.jpeg");
+      }
+      
+    }
+  }
+}

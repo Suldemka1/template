@@ -1,13 +1,14 @@
 import Head from 'next/head'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import MobileHeader from '../components/mobile-header'
+import Footer from '../components/Footer/Footer';
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/layout.scss'
 import '../styles/card.scss'
+import '../styles/about.scss'
 
 import '../styles/globals.scss'
+import MobileHeader from '../components/MobileHeader/MobileHeader';
+import Header from '../components/Header/Header';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header />
-      <MobileHeader />
+      <Header/>
+      <MobileHeader/>
       <Container className='body-container'>
         <Component {...pageProps} />
       </Container>
