@@ -4,6 +4,7 @@
 @media (max-width: 991px) {
   .body-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }

@@ -31,6 +31,27 @@
       }
     }
   }
+
+  .govresourses {
+    .cards {
+      display: flex;
+      justify-content: center !important;
+
+      .card {
+        width: 200px !important;
+
+        font-size: 15px;
+
+        padding: 2px !important;
+
+        a {
+          div {
+            padding: 3px !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -52,6 +73,13 @@
           padding: 1px;
         }
       }
+    }
+  }
+
+  .govresourses {
+    .cards {
+      display: flex;
+      justify-content: center !important;
     }
   }
 }
@@ -207,7 +235,6 @@
 }
 
 .govresourses {
-
   background: #f4f7fb;
 
   .resourse {
@@ -221,13 +248,17 @@
 
   .cards {
     display: flex;
+    justify-content: space-around !important;
     flex-wrap: wrap;
     padding: 40px;
+    margin: auto;
 
     .card {
       flex-grow: 1;
 
-      width: 30%;
+      min-width: 250px;
+      width: auto;
+      max-width: 250px;
       padding: 20px;
       border: 1px solid white;
       border-radius: 5px;
@@ -255,7 +286,7 @@
         align-items: center;
 
         width: 100% !important;
-        height: 100px !important;
+        height: 80px !important;
 
         div {
           padding: 20px;
