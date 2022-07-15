@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image"
 import UniversalCard from "../components/card";
+import { PageName } from "../components/PageName/PageName";
 
 export default function About() {
   return (
     <>
-      <h1>О министерстве</h1>
+      <PageName title='О министерстве' />
       <div className='textinfo'>
         <p>Министерство сокрназвание Российской Федерации (Минсокрназвание России) является федеральным органом исполнительной власти, образованным в соответствии с Указом Президента Российской Федерации от 15 мая 2018 г. № 215 «О структуре федеральных органов исполнительной власти».</p>
         <br />
@@ -17,23 +18,23 @@ export default function About() {
       <div className='documents'>
         <div className='documentCard'>
           <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
-          <Link href="/">Ссылка на документ №1</Link>
+          <Link href="/documents/sample.pdf">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
           <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
-          <Link href="/">Ссылка на документ №1</Link>
+          <Link href="/documents/sample.pdf">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
           <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
-          <Link href="/">Ссылка на документ №1</Link>
+          <Link href="/documents/sample.pdf">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
           <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
-          <Link href="/">Ссылка на документ №1</Link>
+          <Link href="/documents/sample.pdf">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
           <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
-          <Link href="/">Ссылка на документ №1</Link>
+          <Link href="/documents/sample.pdf">Ссылка на документ №1</Link>
         </div>
       </div>
 

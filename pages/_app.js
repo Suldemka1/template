@@ -22,14 +22,28 @@ function MyApp({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header/>
-      <MobileHeader/>
+      <Header
+        compressedName='Минэкономиразвития РТ' 
+        fullName='Министертсво экономического развития и промышленности Республики Тыва'/>
+      <MobileHeader />
       <Container className='body-container'>
         <Component {...pageProps} />
       </Container>
-      <Footer />
+      <Footer phone={'+7 999 124 5548'} email={'someemail@mail.ru'}/>
     </>
   )
+}
+
+import fsPromises from 'fs/promises';
+import path from 'path'
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'data.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  return {
+    props: objectData
+  }
 }
 
 export default MyApp

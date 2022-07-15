@@ -2,6 +2,13 @@
   .activity {
     justify-content: center !important;
   }
+
+  .management, .structure {
+    .headOf {
+      display: flex;
+      justify-content: center !important;
+    }
+  }
 }
 
 .activity {

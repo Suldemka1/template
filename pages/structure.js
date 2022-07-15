@@ -1,4 +1,5 @@
-import Person from "../components/person";
+import Person from "../components/PersonCard/Person";
+import { PageName } from "../components/PageName/PageName";
 
 export default function Structure() {
 
@@ -105,8 +106,8 @@ export default function Structure() {
 
   return (
     <div className="structure">
-    
-      <h1>Структура министерства</h1>
+
+      <PageName title='Структура министерства' />
       <div className="headOf">
         <Person
           surname='Cат'

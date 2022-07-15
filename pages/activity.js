@@ -1,10 +1,11 @@
 import UniversalCard from "../components/card";
+import { PageName } from "../components/PageName/PageName";
 
 export default function Activity() {
   return (
     <>
-      <h1>Деятельность министерства</h1>
-      <p>Деятельность министерства представлена в девяти направлениях.</p>
+      <PageName title='Деятельность министерства' />
+      <p>Деятельность министерства представлена в семи направлениях.</p>
       <div className='activity'>
         <UniversalCard
           title={'Ключевые направления работы'}

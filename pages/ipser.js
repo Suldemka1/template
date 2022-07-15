@@ -1,9 +1,10 @@
 import Map from "../components/Map/Map"
+import { PageName } from "../components/PageName/PageName"
 
 export default function Ipser(){
   return(
     <div>
-      <h2>Индивидуальный план социального экономического развития</h2>
+      <PageName title='Индивидуальный план социального экономического развития' />
       <Map/>
     </div>
   )

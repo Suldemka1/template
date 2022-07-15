@@ -1,9 +1,11 @@
 import { Form, FloatingLabel, FormGroup, FormCheck, Button } from "react-bootstrap";
+import { PageName } from "../components/PageName/PageName";
 
 export default function SendRequest() {
   return (
     <Form>
-      <h2>Прием обращений граждан</h2>
+      <h2></h2>
+      <PageName title='Прием обращений граждан' />
       <FormGroup style={{ width: '30rem', margin: "auto" }}>
         <h5>Отправить обращение</h5>
         <FloatingLabel

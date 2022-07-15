@@ -1,9 +1,10 @@
 import Subordinate from '../components/subordinate'
+import { PageName } from '../components/PageName/PageName'
 
 export default function Subordinates() {
   return (
     <div className="subordinates">
-      <h1>Подведомственные организации</h1>
+      <PageName title='Подведомственные организации' />
       
         <Subordinate
           title='Фонд поддержки предпринимательства Республики Тыва'
@@ -13,7 +14,6 @@ export default function Subordinates() {
           phone='+7 (39422) 36082'
           email='someemail@mail.ru'
         />
-
 
         <Subordinate
           title='Фонд поддержки предпринимательства Республики Тыва'

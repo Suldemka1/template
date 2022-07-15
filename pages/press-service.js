@@ -1,11 +1,10 @@
 import press from '../styles/press.module.css'
-import Image from 'next/image'
-import News from './news'
+import { PageName } from '../components/PageName/PageName'
 
 export default function Press() {
   return (
     <>
-      <h1>Пресс-служба</h1>
+      <PageName title='Пресс-служба' />
 
       <div className={press.contacts}>
         <div><p>Электронная почта</p><p>someemail@mail.ru</p></div>

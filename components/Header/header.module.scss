@@ -15,9 +15,14 @@
 
 .header {
   display: block;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 9999;
+  width: 100%;
 
-  margin-bottom: 30px;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
 
   .navbar_top {
     background: rgb(31, 54, 133);
@@ -46,7 +51,7 @@
   .navbar_brand {
     width: 100%;
     height: 200px;
-    background: rgba(253, 253, 253, 0.9);
+    background: rgba(253, 253, 253);
     display: flex;
     align-items: center !important;
 
@@ -97,6 +102,11 @@
   .nav_menu {
     background: rgb(247, 247, 247);
     box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 1px 2px rgb(0 0 0 / 5%);
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
     menu {
       margin: auto;

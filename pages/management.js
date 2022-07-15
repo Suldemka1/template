@@ -1,4 +1,5 @@
-import Person from "../components/person";
+import Person from "../components/PersonCard/Person";
+import { PageName } from "../components/PageName/PageName";
 
 export default function Management() {
 
@@ -103,7 +104,8 @@ export default function Management() {
 
   return (
     <div className="management">
-      <h1>Руководство министерства</h1>
+      <PageName title='Руководство министерства' />
+      <h1></h1>
       <div className="headOf">
 
         <Person

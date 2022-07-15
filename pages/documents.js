@@ -1,7 +1,14 @@
+import { PageName } from "../components/PageName/PageName"
+
 export default function Documents(params) {
+
+  
+
+
   return(
     <>
-      Банк документов
+    <PageName title='Банк документов' />
+      
     </>
   )
 }
