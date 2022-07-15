@@ -20,7 +20,7 @@ function UniversalCard(params, { children }) {
         <Card style={{maxWidth: '350px'}}>
           {children}
           <Card.Body>
-            <Image src={params.image} width={params.width} height={params.height} layout="fixed" objectFit="cover"/>
+            <Image alt='some' src={params.image} width={params.width} height={params.height} layout="fixed" objectFit="cover"/>
           </Card.Body>
           <Card.Footer style={{maxWidth: '350px'}}>
             <p>{params.title}</p>

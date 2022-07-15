@@ -10,7 +10,7 @@ export default function Subordinate(params) {
         </Card.Header>
         <Card.Body>
           <div className="img_container">
-            <Image src={params.image} layout="fill" className="image" />
+            <Image alt='some' src={params.image} layout="fill" className="image" />
           </div>
 
           <div className="sub-props">

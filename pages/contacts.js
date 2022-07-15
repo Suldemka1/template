@@ -154,12 +154,12 @@ export default function Contacts() {
           <div className={contacts.item}>
             <p>Социальные медиа</p>
             <ul>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
-              <li><Link href={'/'}><a><Image src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
             </ul>
           </div>
           <hr />

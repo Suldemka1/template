@@ -16,23 +16,23 @@ export default function About() {
 
       <div className='documents'>
         <div className='documentCard'>
-          <Image src={"/file-icon.jpeg"} width={20} height={20} />
+          <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
           <Link href="/">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
-          <Image src={"/file-icon.jpeg"} width={20} height={20} />
+          <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
           <Link href="/">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
-          <Image src={"/file-icon.jpeg"} width={20} height={20} />
+          <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
           <Link href="/">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
-          <Image src={"/file-icon.jpeg"} width={20} height={20} />
+          <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
           <Link href="/">Ссылка на документ №1</Link>
         </div>
         <div className='documentCard'>
-          <Image src={"/file-icon.jpeg"} width={20} height={20} />
+          <Image alt='some' src={"/file-icon.jpeg"} width={20} height={20} />
           <Link href="/">Ссылка на документ №1</Link>
         </div>
       </div>

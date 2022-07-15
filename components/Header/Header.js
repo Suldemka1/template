@@ -10,7 +10,7 @@ export default function Header() {
       <div className={header.navbar_top}>
         <Container>
           <div className={header.navbar_top_content}>
-            <Image src="/herb.svg.png" width={80} height={80} />
+            <Image alt='some' src="/herb.svg.png" width={80} height={80} />
             {/* <div className={header.navbar_links}> */}
             <Link href="/">Министерство</Link>
             <Link href="/documents">Банк документов</Link>
@@ -33,7 +33,7 @@ export default function Header() {
           <div className={header.navbar_brand_content}>
 
             <div className={header.navbar_brand_logo_name}>
-              <Image className={header.image} src="/tuvan_herb.png" width={100} height={100} />
+              <Image alt='some' className={header.image} src="/tuvan_herb.png" width={100} height={100} />
               <div className={header.navbar_brand_name}>
                 <h2>Минэкономразвития РТ</h2>
                 <h4>Министерство экономического развития и промышленности</h4>
@@ -41,7 +41,7 @@ export default function Header() {
             </div>
 
             <div className={header.must_have}>
-              <div className={header.eyes}><Image src={'/eye.png'} width={37.5} height={22.5} />Версия для слабовидящих</div>
+              <div className={header.eyes}><Image alt='some' src={'/eye.png'} width={37.5} height={22.5} />Версия для слабовидящих</div>
               <div>Общественная приемная</div>
               <div>Противодействие коррупции</div>
               <div>Горячая линия</div>

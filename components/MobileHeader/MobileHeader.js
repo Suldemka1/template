@@ -28,7 +28,7 @@ export default function MobileHeader() {
       </div>
 
       <div className={menu.min_logo_name}>
-        <Image src='/herb.svg.png' alt='' width={40} height={40} />
+        <Image alt='some' src='/herb.svg.png' width={40} height={40} />
         <div>МинЭк Тыва</div>
       </div>
     </header>

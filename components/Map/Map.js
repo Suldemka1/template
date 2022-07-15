@@ -160,7 +160,7 @@ export default function Map(){
           </a>
         </svg>
 
-       {/* <Image src="/newmap.svg" alt="" width='100%' height='100%'/> */}
+       {/* <Image alt='some' src="/newmap.svg" alt="" width='100%' height='100%'/> */}
         <object data="/newmap.svg" type=""></object>
         <div className={map.popup}>
           <div className={map.region_title}>

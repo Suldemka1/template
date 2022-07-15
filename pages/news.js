@@ -9,7 +9,7 @@ export default function News({ posts }) {
       <Card >
         <Card.Body>
           <div className='img_container'>
-            <Image src={'/news_1.jpg'} layout='fill' className='image' />
+            <Image alt='some' src={'/news_1.jpg'} layout='fill' className='image' />
           </div>
           <div className='news_content'>
             <Card.Title>{data.title}</Card.Title>

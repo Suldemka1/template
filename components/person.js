@@ -11,7 +11,7 @@ export default function Person(params) {
         </Card.Header>
         <Card.Body>
           <div className="img_container">
-            <Image src='/person.jpg' layout="fill" className="image" />
+            <Image alt='some' src='/person.jpg' layout="fill" className="image" />
           </div>
 
           <ListGroup>
