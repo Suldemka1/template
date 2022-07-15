@@ -1,0 +1,61 @@
+.bg_gray {
+  background: #f4f7fb;
+}
+
+.resourse {
+  width: 1110px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.resourse h2 {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  padding: 40px;
+}
+
+.card {
+  width: 260px;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #fff;
+
+  display: flex;
+
+  align-items: center;
+
+  margin: 10px;
+}
+
+.card:hover {
+  color: #155ED3;
+}
+
+.card a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card a div {
+  padding: 20px;
+}
+
+.card a img {
+  content: url('../public/gosuslugihex.svg');
+}
+
+.card:hover a img {
+  content: url('../public/gosuslugihex_hover.svg');
+}

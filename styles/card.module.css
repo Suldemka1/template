@@ -1,0 +1,16 @@
+.card {
+  max-width: 350px;
+  height: auto;
+  margin: 10px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  font-size: calc(1rem + 5px);
+  margin: auto;
+  line-height: 40px;
+
+  text-align: center;
+}

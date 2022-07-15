@@ -1,0 +1,19 @@
+.card {
+  
+}
+
+.card p {
+  text-align: center;
+}
+
+.projects_body h3 {
+  font-weight: 500;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 40px;
+}

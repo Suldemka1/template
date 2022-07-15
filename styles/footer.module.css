@@ -1,0 +1,78 @@
+@media (max-width: 1110px){
+  .footer {
+    width: 100vw !important;
+  }
+}
+
+.footer {
+  width: 1110px;
+  font-size: calc(1rem + 5px);
+  margin: auto;
+  line-height: 2.5rem;
+
+  color: white;
+}
+
+.jurinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.minname {
+}
+
+.type {
+  font-size: calc(1vw + 1px);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts div {
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  height: 40px;
+}
+
+.contacts div img {
+
+}
+
+.contacts div p {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.contacts img {
+  width: 30px;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_media a {
+  display: flex;
+  text-align: center;
+}
+
+.licence {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding-top: 20px;
+}
+
+.licence p {
+  font-size: 20px;
+}

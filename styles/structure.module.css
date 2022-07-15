@@ -1,0 +1,24 @@
+@media (max-width: 1081px) {
+  .structure .ministr {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .structure .headOf {
+    justify-content: center !important;
+  }
+}
+
+.structure {
+  justify-content: space-between;
+}
+
+.structure .ministr {
+  display: block;
+}
+
+.structure .headOf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
