@@ -1,4 +1,4 @@
-import Map from "../components/Map/map"
+import Map from "../components/Map/Map"
 
 export default function Ipser(){
   return(
