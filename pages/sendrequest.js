@@ -63,7 +63,7 @@ export default function SendRequest() {
   const authors = () => {
     return (
       <>
-        <button onClick={handler()}>Добавить соавтора</button>
+        <button>Добавить соавтора</button>
         <div className="coauthors"></div>
       </>
 

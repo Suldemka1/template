@@ -2,7 +2,7 @@ import Person from "../components/PersonCard/Person";
 import { PageName } from "../components/PageName/PageName";
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/staff')
+  const res = await fetch('http://127.0.0.1:3000/api/staff')
   const staff = await res.json()
 
   return {

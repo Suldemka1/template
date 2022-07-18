@@ -2,7 +2,7 @@ import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
 
 export async function getStaticProps(){
-  const res = await fetch('http://localhost:3000/api/ministryinfo')
+  const res = await fetch('http://127.0.0.1:3000/api/ministryinfo')
   const press = await res.json()
 
   return {

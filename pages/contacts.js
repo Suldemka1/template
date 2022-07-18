@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export async function getStaticProps(){
-  const res = await fetch('http://localhost:3000/api/ministryinfo')
+  const res = await fetch('http://127.0.0.1:3000/api/ministryinfo')
   const contacts = await res.json()
 
 
