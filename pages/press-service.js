@@ -1,29 +1,42 @@
 import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
-
+import axios from 'axios'
 
 const APIpath = process.env.APIpath
 
-export async function getStaticProps(){
-  const res = await fetch(`https://${process.env.APIpath}/api/ministryinfo`)
-  const press = await res.json()
+ export async function getStaticProps() {
 
+  const res = axios.get(`https://${process.env.APIpath}/api/ministryinfo`,
+    {
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'User-Agent': '*',
+      },
+    }
+  )
+  const press = []
+  res.then(res => {
+    const press = res.data
+    console.log(res.data)
+  })
+  
   return {
     props: {
-      press: press.pressService
+      press: press
     }
   }
+
 }
 
 export default function Press(props) {
   console.log('api path')
-  console.log(APIpath)
+  console.log(props.press)
   return (
     <>
       <PageName title='Пресс-служба' />
 
       <div className={press.contacts}>
-        <div><p>Электронная почта</p><p>{props.press.email} {process.env.APIpath}</p></div>
+        <div><p>Электронная почта</p><p>{props.press.pressService.email} {process.env.APIpath}</p></div>
         <hr />
         <div><p>Телефоны</p><p>{props.press.phone}</p></div>
         <hr />

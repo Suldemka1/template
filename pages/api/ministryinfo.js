@@ -1,4 +1,5 @@
 export const ministry = {
+  
   about: {
     minFullName: 'Министерство экономического развития и промышленности Республики Тыва',
     minCompressedName: 'Минэкономразвития РТ',
