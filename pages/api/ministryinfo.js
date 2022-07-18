@@ -25,7 +25,7 @@ export const ministry = {
   },
 
   details: {
-    url: 'http://localhost:3000/documents/sample.pdf'
+    url: 'http://localhost/documents/sample.pdf'
   }
 }
 

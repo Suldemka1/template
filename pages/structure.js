@@ -2,7 +2,7 @@ import Person from "../components/PersonCard/Person";
 import { PageName } from "../components/PageName/PageName";
 
 export async function getStaticProps() {
-  const res = await fetch('https://template-woad-psi.vercel.app/:3000/api/staff')
+  const res = await fetch('https://template-woad-psi.vercel.app/api/staff')
   const staff = await res.json()
 
   return {

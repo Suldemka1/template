@@ -2,7 +2,7 @@ import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
 
 export async function getStaticProps(){
-  const res = await fetch('https://template-woad-psi.vercel.app/:3000/api/ministryinfo')
+  const res = await fetch('https://template-woad-psi.vercel.app/api/ministryinfo')
   const press = await res.json()
 
   return {
