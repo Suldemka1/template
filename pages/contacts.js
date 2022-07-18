@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export async function getStaticProps(){
-  const res = await fetch('http://https://template-woad-psi.vercel.app/:3000/api/ministryinfo')
+  const res = await fetch('https://template-woad-psi.vercel.app/:3000/api/ministryinfo')
   const contacts = await res.json()
 
 
