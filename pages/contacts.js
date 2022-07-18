@@ -2,10 +2,9 @@ import contacts from '../styles/contacts.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
   const res = await fetch(`http://${process.env.APIpath}/api/ministryinfo`)
   const contacts = await res.json()
-
 
   return {
     props: {
