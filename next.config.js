@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    APIpath: 'localhost:3000',
+    APIpath: 'template-woad-psi.vercel.app',
   },
 
   reactStrictMode: true,
