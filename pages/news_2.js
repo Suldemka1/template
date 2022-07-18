@@ -4,15 +4,13 @@
 // import Image from 'next/image'
 // import { Button, Card } from 'react-bootstrap'
 
-// export default function News({ posts }) {
-//   const datamap = posts.map((data) => (
-//       <div>as</div>
-//   ))
+export default function News() {
 
-//   return (
-//     <></>
-//   )
-// }
+
+  return (
+    <></>
+  )
+}
 
 // export async function getStaticProps(context) {
 //   const response = await fetch('https://jsonplaceholder.typicode.com/posts')
