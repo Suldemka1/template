@@ -7,28 +7,28 @@ import { Button, Card } from 'react-bootstrap'
 import { PageName } from "../../components/PageName/PageName";
 
 export const getStaticProps = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const data = await response.json();
+  const res = await fetch('http://localhost:3000/api/documents');
+  const docs = await res.json();
   
 
-  if (!data) {
+  if (!docs) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { posts: data },
+    props: { docs: docs },
   }
 };
 
 
 
-const News = ({ posts }) => {
+const Docs = ({ docs }) => {
 
-  const datamap = posts.map(({ id, title }) => (
+  const datamap = docs.map(({ id, name, tag }) => (
 
-      <Link href={`/news/${id}`} key={id} className={'news'}>
+      <Link href={`/documents/${id}`} key={id} className={'news'}>
         <div className='news' key={id}>
           <Card >
             <Card.Body>
@@ -36,8 +36,9 @@ const News = ({ posts }) => {
                 <Image alt='some' src={'/news_1.jpg'} layout='fill' className='image' />
               </div>
               <div className='news_content'>
-                <Card.Title>{title}</Card.Title>
+                <Card.Title>{name}</Card.Title>
                 <Card.Text>
+                  {tag}
                 </Card.Text>
                 <div className='news-tags'>
                   <Button className='tag'>Tag 1</Button>
@@ -83,4 +84,4 @@ const News = ({ posts }) => {
   );
 };
 
-export default News;
+export default Docs;

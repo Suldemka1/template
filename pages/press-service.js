@@ -10,21 +10,19 @@ const APIpath = process.env.APIpath
   
   return {
     props: {
-      press: press
+      press: press.pressService
     }
   }
 
 }
 
 export default function Press(props) {
-  console.log('api path')
-  console.log(props.press)
   return (
     <>
       <PageName title='Пресс-служба' />
 
       <div className={press.contacts}>
-        <div><p>Электронная почта</p><p>{props.press.pressService.email} {process.env.APIpath}</p></div>
+        <div><p>Электронная почта</p><p>{props.press.email}</p></div>
         <hr />
         <div><p>Телефоны</p><p>{props.press.phone}</p></div>
         <hr />
