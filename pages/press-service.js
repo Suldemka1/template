@@ -1,24 +1,12 @@
 import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
-import axios from 'axios'
 
 const APIpath = process.env.APIpath
 
- export async function getStaticProps() {
+ export async function getServerSideProps() {
 
-  const res = axios.get(`https://${process.env.APIpath}/api/ministryinfo`,
-    {
-      headers: {
-        Accept: 'application/json, text/plain, */*',
-        'User-Agent': '*',
-      },
-    }
-  )
-  const press = []
-  res.then(res => {
-    const press = res.data
-    console.log(res.data)
-  })
+  const res = await fetch(`http:${process.env.APIpath}/api/ministryinfo`)
+  const press = await res.json()
   
   return {
     props: {
