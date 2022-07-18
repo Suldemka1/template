@@ -2,7 +2,22 @@ import contacts from '../styles/contacts.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Contacts() {
+export async function getStaticProps(){
+  const res = await fetch('http://localhost:3000/api/ministryinfo')
+  const contacts = await res.json()
+
+
+  return {
+    props: {
+      about: contacts.about,
+      contacts: contacts.contacts,
+      socialMedia: contacts.socialMedia,
+      details: contacts.details
+    }
+  }
+}
+
+export default function Contacts(props) {
   return (
     <>
       <div className={contacts.contacts}>
@@ -124,28 +139,29 @@ export default function Contacts() {
         <div >
           <div className={contacts.item}>
             <p>Полное наименование</p>
-            <p>Министерство полное название</p>
+            <p>{props.about.minFullName}</p>
           </div>
           <hr />
         </div>
 
         <div>
           <div className={contacts.item}>
-            <p>Сокращенное наименование</p><p>Минсокрназвание</p>
+            <p>Сокращенное наименование</p>
+            <p>{props.about.minCompressedName}</p>
           </div>
           <hr />
         </div>
 
         <div>
           <div className={contacts.item}>
-            <p>Реквизиты лицевого счета</p><p>скачать</p>
+            <p>Реквизиты лицевого счета</p><p><Link href={props.details.url} download='sample.pdf'><a>посмотреть</a></Link></p>
           </div>
           <hr />
         </div>
 
         <div>
           <div className={contacts.item}>
-            <p>Перечень источников дохода</p><p>скачать</p>
+            <p>Перечень источников дохода</p><p><Link href={props.details.url} download='sample.pdf'><a>посмотреть</a></Link></p>
           </div>
           <hr />
         </div>
@@ -154,7 +170,7 @@ export default function Contacts() {
           <div className={contacts.item}>
             <p>Социальные медиа</p>
             <ul>
-              <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
+              <li><Link href={props.socialMedia.vk}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
               <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
               <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>
               <li><Link href={'/'}><a><Image alt='some' src={'/vk_logo.png'} width={30} height={30}/></a></Link></li>

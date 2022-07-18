@@ -1,19 +1,31 @@
 import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
 
-export default function Press() {
+export async function getStaticProps(){
+  const res = await fetch('http://localhost:3000/api/ministryinfo')
+  const press = await res.json()
+
+  return {
+    props: {
+      press: press.pressService
+    }
+  }
+}
+
+export default function Press(props) {
+  console.log(props.press.email)
   return (
     <>
       <PageName title='Пресс-служба' />
 
       <div className={press.contacts}>
-        <div><p>Электронная почта</p><p>someemail@mail.ru</p></div>
+        <div><p>Электронная почта</p><p>{props.press.email}</p></div>
         <hr />
-        <div><p>Телефоны</p><p>+7(39422)2-67-70, добавочный номер 502</p></div>
+        <div><p>Телефоны</p><p>{props.press.phone}</p></div>
         <hr />
-        <div><p>Адрес</p><p>667000 г. Кызыл, ул. Кочетова д. 1</p></div>
+        <div><p>Адрес</p><p>{props.press.adress}</p></div>
         <hr />
-        <div><p>Ответственное лицо</p><p>Фамилия Имя Отчество</p></div>
+        <div><p>Ответственное лицо</p><p>{props.press.chairman}</p></div>
         <hr />
       </div>
 
