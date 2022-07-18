@@ -1,8 +1,11 @@
 import press from '../styles/press.module.css'
 import { PageName } from '../components/PageName/PageName'
 
+
+const APIpath = process.env.APIpath
+
 export async function getStaticProps(){
-  const res = await fetch('https://template-woad-psi.vercel.app/api/ministryinfo')
+  const res = await fetch(`http://${process.env.APIpath}/api/ministryinfo`)
   const press = await res.json()
 
   return {
@@ -13,13 +16,14 @@ export async function getStaticProps(){
 }
 
 export default function Press(props) {
-  console.log(props.press.email)
+  console.log('api path')
+  console.log(APIpath)
   return (
     <>
       <PageName title='Пресс-служба' />
 
       <div className={press.contacts}>
-        <div><p>Электронная почта</p><p>{props.press.email}</p></div>
+        <div><p>Электронная почта</p><p>{props.press.email} {process.env.APIpath}</p></div>
         <hr />
         <div><p>Телефоны</p><p>{props.press.phone}</p></div>
         <hr />

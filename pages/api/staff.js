@@ -1,13 +1,10 @@
 export const staff = {
   ministr: {
     id: 0,
-
     surname: 'Сат',
     name: 'Айдыс',
     patronymic: 'Александрович',
-
     position: 'Министр экономического развития и промышленности Республики Тыва',
-
     phone: '+7 (39422) 9-76-62',
     email: 'mineconom@rtyva.ru'
   },
