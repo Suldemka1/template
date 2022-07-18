@@ -5,7 +5,7 @@ import { PageName } from '../components/PageName/PageName'
 const APIpath = process.env.APIpath
 
 export async function getStaticProps(){
-  const res = await fetch(`http://${process.env.APIpath}/api/ministryinfo`)
+  const res = await fetch(`https://${process.env.APIpath}/api/ministryinfo`)
   const press = await res.json()
 
   return {
