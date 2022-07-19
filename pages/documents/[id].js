@@ -1,4 +1,3 @@
-import { Card } from "react-bootstrap";
 import { DocumentPage } from "../../components/DocumentCard/DocumentCard";
 
 export const getStaticPaths = async () => {
