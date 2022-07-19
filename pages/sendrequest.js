@@ -4,6 +4,13 @@ import { useEffect, useState } from "react";
 import { Form, FloatingLabel, FormGroup, FormCheck, Button } from "react-bootstrap";
 import { PageName } from "../components/PageName/PageName";
 import axios from 'axios'
+import { ReactDOM, createRoot, createPortal } from "react-dom";
+
+const Example = () => {
+  <>
+    <input type={'text'} placeholder="text"/>
+  </>
+}
 
 export default function SendRequest() {
   const [snp, setSnp] = useState('')
@@ -46,27 +53,30 @@ export default function SendRequest() {
   }
 
   useEffect(() => {
-    function hadler() {
-      const title = React.createElement('h1', 'coauthor_1')
-      render(title, document.getElementById('coauthors'))
-    }
 
   }, [
     coauthors
   ])
 
   const handleAddAuthor = () => {
-    //setCoauthors(coauthors + 1)
+    const container = document.getElementById('coauthors')
+    const root = createRoot(container)
+
+    const title = React.createElement('div', null, `React elements`)
+
+
+    root.render(title)
+
+    console.log('add author')
   }
 
 
   const authors = () => {
     return (
       <>
-        <button>Добавить соавтора</button>
-        <div className="coauthors"></div>
+        <Button onClick={handleAddAuthor}>Добавить соавтора</Button>
+        <div className="coauthors" id='coauthors'></div>
       </>
-
     )
   }
 
@@ -84,7 +94,10 @@ export default function SendRequest() {
             controlId="floatingInput"
             label="Фамилия Имя Отчество"
             className="mb-3">
-            <Form.Control value={snp} onChange={(e) => setSnp(e.target.value)} placeholder="Фамилия Имя Отчество" />
+            <Form.Control
+              value={snp}
+              onChange={(e) => setSnp(e.target.value)}
+              placeholder="Фамилия Имя Отчество" />
           </FloatingLabel>
 
 
@@ -92,7 +105,11 @@ export default function SendRequest() {
             controlId="floatingInput"
             label="Номер телефона"
             className="mb-3">
-            <Form.Control type="phone" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Номер телефона" />
+            <Form.Control
+              type="phone"
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
+              placeholder="Номер телефона" />
           </FloatingLabel>
 
 
@@ -100,7 +117,11 @@ export default function SendRequest() {
             controlId="floatingInput"
             label="Адрес электронной почты"
             className="mb-3">
-            <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Адрес электронной почты" />
+            <Form.Control
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="Адрес электронной почты" />
           </FloatingLabel>
 
           <div className="coauthors" id="coauthors">
@@ -108,8 +129,16 @@ export default function SendRequest() {
           </div>
 
           <FormGroup>
-            <Form.Control as="textarea" value={feedback} onChange={e => setFeedback(e.target.value)} rows={4} placeholder="Введите ваше сообщение" style={{ resize: 'none', }} />
+            <Form.Control
+              as="textarea"
+              value={feedback}
+              onChange={e => setFeedback(e.target.value)}
+              rows={4}
+              placeholder="Введите ваше сообщение"
+              style={{ resize: 'none', }} />
           </FormGroup>
+
+
 
           <p>
             В случае необходимости в подтверждение своих доводов гражданин вправе приложить к обращению необходимые
@@ -151,12 +180,13 @@ export default function SendRequest() {
               onChange={handleOfferCheckChange}
             ></FormCheck>
           </FormGroup>
-          <Button type="submit" disabled={buttonDisabled} >Отправить</Button>
+          <Button
+            type="submit"
+            disabled={buttonDisabled} >Отправить</Button>
         </FormGroup>
 
 
       </Form>
     </>
-
   )
 }

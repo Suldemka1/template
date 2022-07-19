@@ -1,6 +1,8 @@
 import { PageName } from "../../components/PageName/PageName";
 import { Button, FloatingLabel, Form } from "react-bootstrap"
 import { DocumentCard } from "../../components/DocumentCard/DocumentCard";
+import { Datepicker } from "../../components/DatePicker/DatePicker";
+
 
 export const getStaticProps = async () => {
   const res = await fetch(`http://${process.env.APIpath}/api/documents`);
@@ -35,21 +37,25 @@ const Docs = ({ docs }) => {
   return (
     <>
       <PageName title='Банк документов' />
-      <FloatingLabel
-        controlId="floatingInput"
-        label="Заголовок содержит"
-        className="mb-3">
-        <Form.Control type="phone" value='' onChange={''} placeholder="Заголовок содержит" />
-      </FloatingLabel>
+      <div>
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Заголовок содержит"
+          className="mb-3">
+          <Form.Control type="phone" value='' onChange={''} placeholder="Заголовок содержит" />
+        </FloatingLabel>
+        <Datepicker />
+      </div>
+
+
 
       <Button onClick={e => ClickHandler()}>Применить</Button>
       <br></br>
       <div className="">
         {datamap}
       </div>
-
     </>
   );
 };
 
-export default Docs;
+export default Docs
