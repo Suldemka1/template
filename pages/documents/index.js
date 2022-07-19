@@ -3,7 +3,7 @@ import { Button, FloatingLabel, Form } from "react-bootstrap"
 import { DocumentCard } from "../../components/DocumentCard/DocumentCard";
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/documents');
+  const res = await fetch(`http://${process.env.APIpath}/api/documents`);
   const docs = await res.json();
 
 
