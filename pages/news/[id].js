@@ -17,8 +17,8 @@ import PostInfo from "../../components/PostInfo";
 
 export const getServerSideProps = async (context) => {
   const { id } = context.params;
-  const response = await fetch(`http://${process.env.APIpath}/api/news/${id}`);
-  const data = await response.json();
+  const res = await fetch(`http://${process.env.APIpath}/api/news/${id}`);
+  const data = await res.json();
 
   if (!data) {
     return {
@@ -27,7 +27,7 @@ export const getServerSideProps = async (context) => {
   }
 
   return {
-    props: { post: data },
+    props: { post: JSON.parse(JSON.stringify(data))},
   }
 };
 

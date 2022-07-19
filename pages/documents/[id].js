@@ -15,7 +15,6 @@ import { DocumentPage } from "../../components/DocumentCard/DocumentCard";
 // }
 
 export const getServerSideProps = async (context) => {
-  console.log(context)
   const { id } = context.params
   const res = await fetch(`http://${process.env.APIpath}/api/documents/${id}`)
   const docs = await res.json()
@@ -27,7 +26,7 @@ export const getServerSideProps = async (context) => {
   }
 
   return {
-    props: { docs: docs }
+    props: { docs: JSON.parse(JSON.stringify(docs))  }
   }
 }
 
