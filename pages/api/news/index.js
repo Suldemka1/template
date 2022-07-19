@@ -34,8 +34,8 @@ export const news = {
               "tokyo ghoul"
           ],
           "img_urls": [
-              "https://i.imgur.com/NIKxN85.jpeg",
-              "https://i.imgur.com/NIKxN85.jpeg",
+              "https://template-woad-psi.vercel.app/news_1.jpg",
+              "https://template-woad-psi.vercel.app/news_1.jpg",
           ]
       }
   ]
