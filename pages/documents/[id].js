@@ -5,7 +5,7 @@ export const getStaticPaths = async () => {
   const res = await fetch(`http://${process.env.APIpath}/api/documents`)
   const docs = await res.json()
 
-  const paths = docs.map(({ id }) => ({
+  const paths = docs.response.map(({ id }) => ({
     params: { id: id.toString() }
   }))
 

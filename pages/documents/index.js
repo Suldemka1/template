@@ -8,7 +8,6 @@ export const getStaticProps = async () => {
   const res = await fetch(`http://${process.env.APIpath}/api/documents`);
   const docs = await res.json();
 
-
   if (!docs) {
     return {
       notFound: true,
@@ -16,7 +15,9 @@ export const getStaticProps = async () => {
   }
 
   return {
-    props: { docs: docs },
+    props: {
+      docs: docs.response
+    },
   }
 };
 
