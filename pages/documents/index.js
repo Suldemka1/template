@@ -1,5 +1,4 @@
 import { PageName } from "../../components/PageName/PageName";
-
 import { Button, FloatingLabel, Form } from "react-bootstrap"
 import { DocumentCard } from "../../components/DocumentCard/DocumentCard";
 
@@ -25,6 +24,7 @@ const Docs = ({ docs }) => {
 
   const datamap = docs.map(({ id, name, tag, date, url }) => (
     <DocumentCard
+      key={id}
       num={id}
       name={name}
       date={date}
@@ -43,7 +43,11 @@ const Docs = ({ docs }) => {
       </FloatingLabel>
 
       <Button onClick={e => ClickHandler()}>Применить</Button>
-      {datamap}
+      <br></br>
+      <div className="">
+        {datamap}
+      </div>
+
     </>
   );
 };
