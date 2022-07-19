@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 import { DocumentPage } from "../../components/DocumentCard/DocumentCard";
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:3000/api/documents')
+  const res = await fetch(`http://${process.env.APIpath}/api/documents`)
   const docs = await res.json()
 
   const paths = docs.map(({ id }) => ({
@@ -17,7 +17,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { id } = context.params
-  const res = await fetch(`http://localhost:3000/api/documents/${id}`)
+  const res = await fetch(`http://${process.env.APIpath}/api/documents/${id}`)
   const docs = await res.json()
 
   if (!docs) {
