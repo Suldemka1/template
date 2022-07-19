@@ -1,20 +1,21 @@
 import { DocumentPage } from "../../components/DocumentCard/DocumentCard";
 
-export const getStaticPaths = async () => {
-  const res = await fetch(`http://${process.env.APIpath}/api/documents`)
-  const docs = await res.json()
+// export const getStaticPaths = async () => {
+//   const res = await fetch(`http://${process.env.APIpath}/api/documents`)
+//   const docs = await res.json()
 
-  const paths = docs.response.map(({ id }) => ({
-    params: { id: id.toString() }
-  }))
+//   const paths = docs.response.map(({ id }) => ({
+//     params: { id: id.toString() }
+//   }))
 
-  return {
-    paths,
-    fallback: false
-  }
-}
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
+  console.log(context)
   const { id } = context.params
   const res = await fetch(`http://${process.env.APIpath}/api/documents/${id}`)
   const docs = await res.json()
