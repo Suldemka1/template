@@ -7,7 +7,7 @@ import { Button, Card } from 'react-bootstrap'
 import { PageName } from "../../components/PageName/PageName";
 
 export const getStaticProps = async () => {
-  const response = await fetch('http://localhost:3000/api/news');
+  const response = await fetch(`http://${process.env.APIpath}/api/news`);
   const data = await response.json();
 
 
