@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Card, Button } from "react-bootstrap"
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/news`)
+  const res = await fetch(`http://${process.env.APIpath}/api/news`)
   const news = await res.json()
   console.log(news)
   return {
