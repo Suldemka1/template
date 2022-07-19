@@ -1,12 +1,12 @@
-import Head from "next/head";
-import { DocumentCard } from "../../components/DocumentCard/DocumentCard";
+import { Card } from "react-bootstrap";
+import { DocumentPage } from "../../components/DocumentCard/DocumentCard";
 
 export const getStaticPaths = async () => {
   const res = await fetch('http://localhost:3000/api/documents')
   const docs = await res.json()
 
   const paths = docs.map(({ id }) => ({
-    params: {id: id.toString() }
+    params: { id: id.toString() }
   }))
 
   return {
@@ -27,14 +27,18 @@ export const getStaticProps = async (context) => {
   }
 
   return {
-    props: {docs : data}
+    props: { docs: docs }
   }
 }
 
-const DocumentItem = ({ doc }) => (
-  <>
-    Документ {doc.id}
-  </>
+const DocumentItem = ({ docs }) => (
+  <DocumentPage
+    num={docs.num}
+    name={docs.name}
+    url={docs.url}
+    date={docs.date}
+    tag={docs.tag}
+  />
 )
 
 export default DocumentItem

@@ -1,4 +1,4 @@
-const documents = [
+export const documents = [
   {
     id: 0,
     name: 'Об утверждении административных регламентов министерства',

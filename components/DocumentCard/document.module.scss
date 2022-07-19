@@ -1,3 +1,59 @@
-.document-card {
+@media (min-width: 992px) {
+  .documentCard {
+    .frame_container {
+      .myiframe {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.documentCard {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .frame_container {
+    width: 100% !important;
+    height: 100vh !important;
+
+    .myiframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: 0;
+
+    }
+  }
+  // .frame_container {
+  //   display: flex;
+  //   justify-content: center;
+  //   .myiframe {
+  //     width: 100% !important;
+  //     height: 100vh !important;
+  //     margin: auto;
+  //   }
+  // }
+
+  .card {
+    background: red;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+
+      .frame_container {
+        width: 100%;
+        height: 100vh;
+        background: red !important;
+        .myiframe {
+          width: 100% !important;
+          min-height: 100vh !important;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.iframe {
+  width: 100%;
 }

@@ -16,8 +16,7 @@ export async function getServerSideProps() {
 }
 
 export default function Documents(props) {
-  console.log(props)
-
+  
   const show = props.documents.map(item => {
     return (
       <DocumentCard
@@ -28,7 +27,6 @@ export default function Documents(props) {
         url={item.url}
       />
     )
-
   })
 
   return (

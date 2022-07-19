@@ -1,15 +1,12 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from 'next/image'
-import news from '../../styles/news.module.css'
-import press from '../../styles/press.module.css'
-import { Button, Card } from 'react-bootstrap'
 import { PageName } from "../../components/PageName/PageName";
+
+import { Button, FloatingLabel, Form } from "react-bootstrap"
+import { DocumentCard } from "../../components/DocumentCard/DocumentCard";
 
 export const getStaticProps = async () => {
   const res = await fetch('http://localhost:3000/api/documents');
   const docs = await res.json();
-  
+
 
   if (!docs) {
     return {
@@ -26,60 +23,27 @@ export const getStaticProps = async () => {
 
 const Docs = ({ docs }) => {
 
-  const datamap = docs.map(({ id, name, tag }) => (
-
-      <Link href={`/documents/${id}`} key={id} className={'news'}>
-        <div className='news' key={id}>
-          <Card >
-            <Card.Body>
-              <div className='img_container'>
-                <Image alt='some' src={'/news_1.jpg'} layout='fill' className='image' />
-              </div>
-              <div className='news_content'>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>
-                  {tag}
-                </Card.Text>
-                <div className='news-tags'>
-                  <Button className='tag'>Tag 1</Button>
-                  <Button className='tag'>Tag 2</Button>
-                  <Button className='tag'>Tag 3</Button>
-                  <Button className='tag'>Tag 4</Button>
-                  <Button className='tag'>Tag 5</Button>
-                  <Button className='tag'>Tag 6</Button>
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
-
-      </Link>
+  const datamap = docs.map(({ id, name, tag, date, url }) => (
+    <DocumentCard
+      num={id}
+      name={name}
+      date={date}
+      tag={tag}
+      url={url}
+    />
   ))
   return (
     <>
-      <Head>
-        <title>Posts</title>
-      </Head>
+      <PageName title='Банк документов' />
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Заголовок содержит"
+        className="mb-3">
+        <Form.Control type="phone" value='' onChange={''} placeholder="Заголовок содержит" />
+      </FloatingLabel>
 
-      <div className={news.news_page}>
-        <PageName title='Новости министерства' />
-        <div className={press.news}>
-          <menu>
-            <li>Новости</li>
-            <li>Анонсы</li>
-            <li>Интервью</li>
-            <li>Выступления и заявления</li>
-            <li>Официальный комментарий</li>
-            <li>Медиатека</li>
-          </menu>
-
-          <div className={press.news_content}>
-            <div className={press.news_date}>01.07.2022</div>
-            {datamap}
-          </div>
-          
-        </div>
-      </div >
+      <Button onClick={e => ClickHandler()}>Применить</Button>
+      {datamap}
     </>
   );
 };
