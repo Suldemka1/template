@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import { Button, Card } from 'react-bootstrap'
 
+
+
+
 const PostInfo = ({ post }) => {
   const { id, title, body, img_urls } = post || {};
   if (!post) {
