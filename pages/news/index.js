@@ -33,7 +33,7 @@ function News({ posts }){
           <Card.Body>
             <div className='img_container'>
               {
-                img_urls.map(item => <Image alt='some' src={item} layout='fill' className="image"/>
+                img_urls.map(item => <Image alt='some' src={item} layout='fill' className="image" key={item}/>
                 )
               }
             </div>

@@ -23,7 +23,7 @@ export default function Example({ news }) {
           <Card.Body>
             <div className='img_container'>
               {
-                img_urls.map(item => <Image src={item} width={100} height={100} objectFit='contain' />
+                img_urls.map(item => <Image src={item} width={100} height={100} objectFit='contain' key={item}/>
                 )
               }
 
