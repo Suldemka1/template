@@ -6,9 +6,9 @@ import press from '../../styles/press.module.css'
 import { Button, Card } from 'react-bootstrap'
 import { PageName } from "../../components/PageName/PageName";
 
-export const getStaticProps = async () => {
-  const response = await fetch(`http://${process.env.APIpath}/api/news`);
-  const data = await response.json();
+export const getServerSideProps = async () => {
+  const res = await fetch(`http://${process.env.APIpath}/api/news`);
+  const data = await res.json()
 
 
   if (!data) {
@@ -18,14 +18,14 @@ export const getStaticProps = async () => {
   }
 
   return {
-    props: { posts: data.response },
+    props: {
+      posts: JSON.parse(JSON.stringify(data)) 
+    },
   }
 };
 
-
-
-function News({ posts }){
-
+function News({ posts }) {
+  console.log(posts)
   const datamap = posts.map(({ id, title, body, unix_time, img_urls }) => {
     return <Link href={`/news/${id}`} key={id} className={'news'}>
       <div className='news' key={id}>
@@ -33,7 +33,7 @@ function News({ posts }){
           <Card.Body>
             <div className='img_container'>
               {
-                img_urls.map(item => <Image alt='some' src={item} layout='fill' className="image" key={item}/>
+                img_urls.map(item => <Image alt='some' src={item} layout='fill' className="image" key={item} />
                 )
               }
             </div>
@@ -83,7 +83,7 @@ function News({ posts }){
           </div>
 
 
-          
+
         </div>
       </div >
     </>
